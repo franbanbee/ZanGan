@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+/* 一定要寫在第一行 */
+/* eric css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        "蘋方-繁", "PingFang TC", "Noto Sans TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -----------------------------------------all_section 全部統一比例總寬度1000----------------------*/
+/* 其他區域通用 */
+.all_section {
+    width: 1000px;
+    height: auto;
+    /* border: #ff0109 5px solid; */
+}
+
+/* topbar專屬 */
+.all_section_topbar {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: #f00e0e 5px solid; */
+}
+
+
+
+
+
+
+
+
+/* -----------------------------共用字體------------------------- */
+body {
+    font-family: 中文"Noto Serif TC", "Noto Sans TC", 英文"Arial", "Unna", "Cinzel";
+}
+
+/* topbar */
+#topbar {
+    background-color: #3C4935;
+    display: flex;
+    justify-content: center;
+    font-family: 中文"Noto Sans TC", "Noto Serif TC", 英文"Arial", "Unna", "Cinzel";
+}
+
+/* x */
+/* topbar專屬 */
+/* .all_section_topbar {
+    color: white;
+    width: 1000px;
+    justify-content: space-between;
+    border: #5f9cd1 5px solid;
+    display: flex;
+} */
+
+
+
+#topbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 左邊menu區塊 */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: #d15f6b 5px solid; */
+    width: 500px;
+}
+
+/* 每個文字方塊 */
+#topbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* 右邊icon區塊 */
+.topbar_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: #c4e072 5px solid; */
+}
+
+.topbar_img {
+    width: 50px;
+    height: 20px;
+}
+
+.topbar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #74c090 5px solid; */
+    width: 100px;
+}
+
+.topbar_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar_block {
+    background-color: #E7E4DB;
+    opacity: 19%;
+    width: 100px;
+    height: 30px;
+}
+
+.topbar_word {
+    color: #fff;
+    z-index: 99;
+    /* border: #ac42da 5px solid; */
+    position: absolute;
+}
+
+
+/* ----------------------------------------news----------------------------- */
+#news {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+}
+
+/* 內容圖片 */
+.news_main {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: flex; */
+}
+
+.news_box {
+    display: flex;
+    justify-content: center;
+    align-content: center;  
+    /* border: #ac42da 5px solid; */
+}
+
+#news.title {
+    background-color: #F0F0F0;
+}
+
+/* x */
+#news .news_col {
+/* display: flex; */
+    /* border: #4742da 5px solid; */
+}
+
+
+.news_subnav{
+    width: 480px;
+    /* border: #d7d76e 5px solid; */
+
+}
+
+.news_hrline {
+    width: 660px;
+}
+
+/* news 標題區塊 */
+#news nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 650px;
+    /* border: #6ed7aa 5px solid; */
+}
+
+
+/* 修改 */
+.news_more{
+    /* justify-content: center; */
+    align-self: center;
+    width: 80px;
+    /* border: #f3b3ca 5px solid; */
+}
+
+
+/* news內容區塊 */
+.news_news {
+    position: relative;
+    /* padding: 5px;
+    margin: 5 0px; */
+    width: 650px;
+    height: 80px;
+    /* border: #42beda 5px solid; */
+}
+
+/* icon右箭頭 */
+.news_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.news_date {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_text {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_hr {
+    padding: 5px;
+    /* margin: 5 5 0 5px; */
+}
+#news a{
+    text-decoration: none;
+    color: #656565;
+}
+
+.news_subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 700px;
+    height: 100px;
+    /* border: #d6094d 5px solid; */
+}
+
+
+/* .news_main{
+    border: #da4286 5px solid;
+} */
+
+
+
+
+/* ----------------------------------------news_page分頁---------------------------------------- */
+/* news_page */
+#news_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #6dcbb5 5px solid; */
+}
+
+.all_section_topbar {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: #f00e0e 5px solid; */
+}
+
+/* 框住date和section的範圍block */
+/* 水平 */
+.news_page_block {
+    background-color: #F0F0F0;
+    /* opacity: 0.3; */
+    display: flex;
+    justify-content: flex-start;
+    /* border: #f17d0a 5px solid; */
+}
+
+/* 日期 */
+.news_page_date {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+    /* border: #cbb56d 5px solid; */
+}
+
+.date {
+    font-size: 28px;
+    font-weight: bold;
+    color: #656565;
+    opacity: 0.5;
+    padding: 0 5px;
+    margin: 0 10px;
+    /* border: #cf5a85 5px solid; */
+}
+
+/* 中間右邊內文區塊 */
+.news_page_section {
+    background-color: #F0F0F0;
+    color: #1D201D;
+    width: 900px;
+    /* border: #62e4f5 5px solid; */
+}
+
+#news_page a {
+    display: flex;
+    text-decoration: none;
+    background-color: #3C4935;
+    opacity: 0.85;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: #d36415 5px solid; */
+}
+
+.news_page_date {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+    display: flex;
+}
+
+.news_page_text {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_page_box {
+    /* border: #15d37a 5px solid; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.news_page_main {
+    position: relative;
+    /* border: #799ed5 5px solid; */
+}
+
+.news_page_logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* border: #7a15d3 5px solid; */
+}
+
+.news_page_gray {
+    background-color: #F0F0F0;
+    /* border: #b973be 5px solid; */
+    color: #F0F0F0;
+
+}
+
+
+
+
+
+/* footer */
+#footer {
+    background-color: #3C4935;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer_ul {
+    display: flex;
+}
+
+.footer_li {
+    position: relative;
+    width: 350px;
+    height: 300px;
+}
+
+/* 上面列 */
+/* logo/access/contact */
+.footer_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 下面列 */
+/* copyright/icon_social media/QA */
+.footer_main {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

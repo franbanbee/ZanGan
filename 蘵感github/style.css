@@ -1,0 +1,979 @@
+@charset "UTF-8";
+
+/* 一定要寫在第一行 */
+/* eric css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        "蘋方-繁", "PingFang TC", "Noto Sans TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*/
+/* index */
+/* ----------------------------------------共用---------------------------------------- */
+/* 圖片不要間距 */
+
+* {
+    font-family: "Noto Sans TC";
+}
+
+body {
+    clear: both;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 15px;
+}
+
+hr {
+    color: #797474;
+    /* width: 700px; */
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #1d201d;
+}
+
+
+/* ----------------------------------------index---------------------------------------- */
+/*  1.topbar */
+/* 修改後 */
+
+/* topbar */
+#topbar {
+    background-color: #3C4935;
+    display: flex;
+    justify-content: center;
+}
+
+.all_section {
+    /* background-color:  #3C4935; */
+    color: white;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    /* border: #5f9cd1 5px solid; */
+}
+
+#topbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 左邊menu區塊 */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* 每個文字方塊 */
+#topbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* 右邊icon區塊 */
+.topbar_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar_img {
+    width: 50px;
+    height: 20px;
+}
+
+.topbar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar_block {
+    background-color: #E7E4DB;
+    opacity: 19%;
+    width: 100px;
+    height: 30px;
+}
+
+.topbar_word {
+    color: #fff;
+    z-index: 99;
+    /* border: #ac42da 5px solid; */
+    position: absolute;
+}
+
+
+/*原本  */
+/*  1.topbar */
+/* #topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C4935;
+    font-size: 14px;
+}
+
+#topbar a {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 5px;
+}
+
+.menu a {
+    display: flex;
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+} */
+
+/* /* .icon li img {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .icon a {
+    display: block;
+    text-decoration: none;
+}
+
+ .img_singup {
+    border: #fff 1px solid;
+    border-radius: 20px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    /* opacity: 0.4; */
+    /* padding: 5px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99; 
+}
+
+.word_signup {
+    position: relative;
+    /*padding: 5px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99; 
+}
+
+
+.img_login {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* 2.banner */
+/* #banner{
+    border: #d81919 5px solid;
+} */
+
+/* 圖片輪播區域 */
+.banner_nav {
+    display: flex;
+    /* border: #90a9d7 5px solid; */
+}
+
+/* 3.about */
+
+/* 關於內容 */
+#about {
+    position: relative;
+    color: #1d201d;
+}
+
+/* about區塊 */
+.about_nav {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+#about p {
+    font-size: 24px;
+}
+
+#about ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_text {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 對齊文字位置 */
+.about_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+/* 圖片相對位置 */
+.about_box {
+    position: relative;
+    width: 800px;
+    height: 700px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* border: #d81919 5px solid; */
+}
+
+/* .about_group {
+    position: relative;
+    width: 700px;
+    height: 670px;
+    z-index: 1;
+    border: solid 5px rebeccapurple;
+} */
+
+/* 個人圖片 */
+.about_along {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    vertical-align: bottom;
+}
+
+
+
+/* 關於更多 */
+/* #about div{
+    position: absolute;
+    bottom: 0;
+} */
+
+/* 圖片往前方 z-index */
+
+
+/* 4.course */
+
+/* 可行 */
+#course {
+    background-color: #3C4935;
+    color: #fff;
+}
+
+.course_section {
+    display: flex;
+    /* border: #e50909 5px solid; */
+}
+
+/* .course_nav{
+    display: flex;
+    border: #72a4db 5px solid;
+    width: 200px;
+    height: 800px;
+} */
+
+#course li {
+    /* position: relative; */
+    display: inline-block;
+}
+
+/* 課程圖片 */
+/* #course ul{
+
+} 
+*/
+/* #course li{
+    /* display: flex;
+    justify-content: flex-start; */
+/* border: #fff 1px solid;
+    border-style: hidden;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+} */
+
+/* logo+文字 小標題區 */
+.course_class {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* logo小icon */
+.course_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    /* border: #4727be 5px solid; */
+}
+
+/* 小標題 */
+.course_text {
+    display: flex;
+    /* border: #acbe27 5px solid; */
+}
+
+#course div {
+    position: relative;
+    width: 216px;
+    height: 432px;
+    z-index: 1;
+}
+
+/* 卡其色方塊和內容 */
+#course .course_p {
+    background-color: #9B8256;
+    opacity: 0.85;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 216px;
+    height: 184px;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+/* 查看更多 */
+.course_more {
+    display: block;
+    text-align: left;
+    margin: 10px;
+    bottom: 0;
+    border: solid 1px black;
+    border-style: hidden;
+    padding: 5px;
+}
+
+/* 課程超連結 */
+#course a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 5.teachers */
+#teachers {
+    color: #1d201d;
+    background-color: #F0F0F0;
+}
+
+/* 整個圖片區域 */
+
+#teachers li {
+    color: #1d201d;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* 師資名字 */
+.teachers_name {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: #fff solid 1px;
+    border-style: hidden;
+    color: #fff;
+}
+
+#teachers h4 {
+    /* color: #fff; */
+    writing-mode: vertical-lr;
+}
+
+/* 圖片相對位置 */
+.teachers_box {
+    position: relative;
+    width: 230px;
+    height: 350px;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* 綠色方塊區 */
+.teachers_good {
+    background-color: #3C4935;
+    opacity: 0.85;
+    color: #fff;
+    width: 80px;
+    height: 300px;
+    /* /* text-align: center; */
+    /* display: flex;
+    justify-content: center; */
+    letter-spacing: 0.045em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+
+}
+
+/* 師資學歷 */
+.teachers_college {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 師資擅長 */
+.teachers_best {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* 6.news */
+#news {
+    display: flex;
+    position: relative;
+}
+
+/* 左邊圖片 */
+.news_main {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#news.title {
+    background-color: #F0F0F0;
+}
+
+#news .news_col {
+    margin: 10;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.news_hrline{
+    width: 700px;
+}
+
+/* news 標題區塊 */
+#news nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 700px;
+}
+
+/* 查看更多 */
+.news_more {
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 30px;
+    padding: 1px;
+    margin: 10px;
+}
+
+/* news內容區塊 */
+.news_news {
+    position: relative;
+    padding: 5px;
+    margin: 5 0px;
+    width: 700px;
+    height: 100px;
+}
+
+/* icon右箭頭 */
+.news_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.news_date {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_text {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_hr {
+    padding: 5px;
+    /* margin: 5 5 0 5px; */
+}
+
+/* 7.media */
+
+/* #media {
+    vertical-align: middle;
+} */
+
+.media_nav {
+    position: relative;
+    padding: 5px;
+}
+
+.media_hr {
+    width: 900px;
+}
+
+/* logo */
+.media_logo {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 大區塊 */
+.media_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 小區塊*6 */
+.media_section {
+    width: 400px;
+    height: 400px;
+    /* padding: 3 3 3 0 px;
+    margin: 3 3 3 0px; */
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+/* 
+.media_col{
+    width: 400px;
+    border: #a90707d3 5px solid;
+} */
+
+/* #media img{
+    width: 350px;
+    height: 200px;
+} */
+
+/* 內文日期 */
+.media_date {
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* 內文小標 */
+.media_title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* 內文文字 */
+.media_text {
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* 查看更多 */
+.media_more {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* 8.footer */
+#footer {
+    background-color: #3C4935;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer_ul {
+    display: flex;
+}
+
+.footer_li {
+    position: relative;
+    width: 350px;
+    height: 300px;
+}
+
+/* 上面列 */
+/* logo/access/contact */
+.footer_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 下面列 */
+/* copyright/icon_social media/QA */
+.footer_main {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+/* ----------------------------------------news_page分頁---------------------------------------- */
+/* news_page */
+#news_page {
+    display: flex;
+    justify-content: space-around;
+    border: #6dcbb5 5px solid; 
+    /* position: relative; */
+}
+
+/* -----------------------------------------all_section 全部統一比例總寬度1000----------------------*/
+.all_section{
+    width: 1000px;
+    height: auto;
+    border: #140f2f 5px solid;
+}
+
+/* #all_topbar{
+    background-color: #3C4935;
+    color: #fff;
+} */
+
+.all_section_topbar{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    border: #140f2f 5px solid;
+}
+
+
+
+
+/* 框住date和section的範圍block */
+/* 水平 */
+.news_page_block {
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px; */
+    background-color: #F0F0F0;
+    opacity: 30;
+    display: flex;
+    justify-content: space-around;
+    border: #6d97cb 5px solid; 
+}
+
+
+/* 日期 */
+.news_page_date {
+    /* position: absolute;
+    right: 0;
+    bottom: 0;*/
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: space-around;
+    border: #cbb56d 5px solid; 
+}
+
+/* 中間右邊內文區塊 */
+.news_page_section {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    border: #cb6db0 5px solid; 
+}
+
+
+
+
+
+
+
+
+
+
+/* x */
+/* 左邊圖片
+.news_page_main {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+#news_page.title {
+    background-color: #F0F0F0;
+}
+
+/* X */
+/* #news .news_page_col {
+    margin: 10;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-between; */
+
+/* news 標題區塊 */
+#news_page nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 700px;
+}
+
+/* 查看更多(報名) */
+.news_page_signup {
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 30px;
+    padding: 1px;
+    margin: 10px;
+}
+
+/* 查看上一則、下一則 */
+.news_page_last , .news_page_next {
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 30px;
+    padding: 1px;
+    margin: 10px;
+}
+
+/* news內容區塊 */
+.news_page_news {
+    position: relative;
+    padding: 5px;
+    margin: 5 0px;
+    width: 700px;
+    height: 100px;
+}
+
+/* icon右箭頭 */
+.news_page_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.news_page_date {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+.news_page_text {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10 0px;
+    text-align: start;
+    width: 700px;
+}
+
+
+
+
+
+
+/* 檢查用 */
+/* border: #6d97cb 5px solid; */
+/* border: #82e0da 5px solid; */
+
+/* ----------------------------------------media_page分頁---------------------------------------- */
+/* ----------------------------------------teachers_page分頁---------------------------------------- */
+/* ----------------------------------------signup_page分頁---------------------------------------- */
+/* ----------------------------------------login_page分頁---------------------------------------- */
+/* ----------------------------------------about_page分頁---------------------------------------- */
+/* ----------------------------------------course_page分頁---------------------------------------- */
+/* ----------------------------------------1---------------------------------------- */
+/* ----------------------------------------1---------------------------------------- */
