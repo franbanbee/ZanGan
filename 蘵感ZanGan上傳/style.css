@@ -360,7 +360,8 @@ hr {
     z-index: 1;
 }
 
-/* 1.topbar */
+/* 1.topbar  */
+/* 精簡code +a +svg+btn */
 /* 字距色彩大小 */
 #topbar {
     background-color: #3C4935;
@@ -398,8 +399,11 @@ hr {
 
 #topbar li {
     display: flex;
+    /* align-items: center; */
+    /* +++ */
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 5px;
+    /* padding: 10px 5px; */
     margin: 10px;
     /* border: #ce89df 1px solid; */
     /* t1 */
@@ -411,27 +415,62 @@ hr {
 }
 
 /* 玻璃擬態 */
+/* 0.原本的底色 */
 .signup {
-    background-color: #E7E4DB;
-    opacity: 19%;
-    width: 100px;
+    background-color: #9B8256;
+    opacity: 100%;
+    /* +++沒反應 */
+    width: 160px;
     height: 30px;
+    /* 以上+++ */
+    padding: 10px 80px;
+    margin: 0 10px;
+    /* +++ */
+
     z-index: 1;
     position: relative;
-}
-
-/* 立即報名 */
-.word {
-    z-index: 99;
-    position: absolute;
     /* border: #8994df 5px solid; */
 }
 
-/* 立即報名+玻璃擬態 */
+
+/* 快速報名 */
+/* 0.原本 */
+.word {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    /* border: #89dfa3 5px solid; */
+    justify-content: center;
+    align-items: center;
+    /* +++ */
+    padding: 0 20px;
+}
+
+
+/* +++測試 */
+/* 快速報名 */
+#topbar .m_btn {
+    background-color: rgba(155,130,86,.74);
+    border-color: #9B8256;
+    border-radius: 5px;
+    width: 160px;
+    height: 35px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topbar .m_btn a {
+    margin-right: 15px;
+}
+
+/* 快速報名+玻璃擬態 */
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* 2.banner */
@@ -562,8 +601,6 @@ hr {
     /* border: solid 5px red;  */
 }
 
-
-
 /* 4.course */
 #course {
     background-color: #3C4935;
@@ -640,6 +677,7 @@ hr {
 .course_class {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     /* t7 */
     margin: 20px 0;
     /* border: #4727be 5px solid;  */
@@ -650,7 +688,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     /* border: #4727be 5px solid; */
 }
 
@@ -658,6 +696,8 @@ hr {
 .course_text h3 {
     display: flex;
     color: #E7E4DB;
+    /* +++ */
+    margin:10px;
     /* border: #acbe27 5px solid; */
 }
 
@@ -728,6 +768,7 @@ hr {
     flex-direction: column;
 
 }
+
 
 /* 5.teachers */
 #teachers {
@@ -1027,7 +1068,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center ; */
-    margin-top:600px ;
+    margin-top:700px ;
     /* border: solid 5px red; */
 }
 
