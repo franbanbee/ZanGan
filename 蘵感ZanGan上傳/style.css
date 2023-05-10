@@ -913,8 +913,8 @@ hr {
 /* bg_logo */
 .b{
     position: absolute;
-    top: -200px;
-    right: 100px;
+    top: -240px;
+    right: 150px;
 }
 
 
@@ -1018,11 +1018,11 @@ hr {
 
 /* :hover */
 .news_img {
-    background-image: url(img/index/index-news/smell.png);
+    background-image: url(img/index/index-news/arrow\(白\).svg);
 }
 
 .news_img :hover {
-    background-image: url(img/index/index-news/dark\ smell.png);
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
 }
 
 .news_date {
@@ -1216,10 +1216,6 @@ hr {
 /* 上面列 */
 /* logo/access/contact */
 .footer_nav {
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    /* border: solid 5px red; */
     margin: 30px 0;
 }
 
