@@ -483,6 +483,11 @@ hr {
 
 }
 
+#topbar .logo{
+    margin-left: 100px;
+    /* border: solid 5px salmon; */
+}
+
 /* 2.banner */
 #banner{
     height: 100vh;
