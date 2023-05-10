@@ -538,7 +538,7 @@ hr {
     /* border: solid 5px rgb(158, 178, 233); */
 }
 
-#banner h1,h2,h3{
+#banner h1,#banner h2,#banner h3{
     color: #fff;
 }
 
