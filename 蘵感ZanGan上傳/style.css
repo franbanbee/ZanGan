@@ -360,11 +360,11 @@ hr {
     z-index: 1;
 }
 
-/* 1.topbar  */
+/* 1.topbar white  */
 /* 精簡code +a +svg+btn */
 /* 字距色彩大小 */
 #topbar {
-    background-color: #3C4935;
+    background-color: rgba(255, 255, 255, 0.05);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,6 +372,11 @@ hr {
     letter-spacing: 2px;
     color: #fff;
     height: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 #topbar a {
@@ -383,17 +388,22 @@ hr {
 }
 
 .menu {
-    margin-right: 200px;
-    padding: 0 10px;
+    width: 500px;
+    margin-right: 100px;
+    padding: 0 0px;
     /* border: solid 5px red; */
+    /* +++0510 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-left: 200px;
+    padding: 40px;
+    margin-left: 350px;
     /* border: #f00e0e 5px solid;  */
 }
 
@@ -450,7 +460,7 @@ hr {
 /* +++測試 */
 /* 快速報名 */
 #topbar .m_btn {
-    background-color: rgba(155,130,86,.74);
+    background-color: rgba(155, 130, 86, .74);
     border-color: #9B8256;
     border-radius: 5px;
     width: 160px;
@@ -474,6 +484,91 @@ hr {
 }
 
 /* 2.banner */
+#banner{
+    height: 100vh;
+    /* border: solid 5px rgb(186, 229, 181); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#banner .sec{
+    position: relative;
+    z-index: 99;
+    /* border: solid 5px salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* RWD物件填滿 */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#banner .logo{
+    /* z-index: 999; */
+    /* border: solid 5px rgb(222, 176, 215); */
+    /* width: 80px;
+    height: 80px; */
+    /* z-index: 2; */
+    
+
+}
+
+#banner .text{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+    /* border: solid 5px rgb(158, 178, 233); */
+}
+
+#banner h1,h2,h3{
+    color: #fff;
+}
+
+#banner .more{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner h1{
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+#banner h2{
+    font-size: 38px;
+    padding: 20px 0;
+}
+
+#banner h4{
+    margin: 10px;
+    font-size: 34px;
+    color: #fff;
+}
+
+#banner h3{
+    margin: 10px;
+}
 /* 3.about */
 #about {
     position: relative;
