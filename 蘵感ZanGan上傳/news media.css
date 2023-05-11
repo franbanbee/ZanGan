@@ -241,11 +241,12 @@ h4 {
 
 
 
-/* 1.topbar */
-/* 1.topbar */
+/* 1.2topbar green  */
+/* 精簡code +a +svg+btn */
 /* 字距色彩大小 */
-#topbar {
+#topbar  {
     background-color: #3C4935;
+    /* background-color: (255,255,255,0.05); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,6 +254,11 @@ h4 {
     letter-spacing: 2px;
     color: #fff;
     height: 10vh;
+    /* 固定捲軸 */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 #topbar a {
@@ -264,24 +270,32 @@ h4 {
 }
 
 .menu {
-    margin-right: 200px;
-    padding: 0 10px;
+    width: 500px;
+    margin-right: 100px;
+    padding: 0 0px;
     /* border: solid 5px red; */
+    /* +++0510 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-left: 200px;
+    padding: 40px;
+    margin-left: 350px;
     /* border: #f00e0e 5px solid;  */
 }
 
 #topbar li {
     display: flex;
+    /* align-items: center; */
+    /* +++ */
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 5px;
+    /* padding: 10px 5px; */
     margin: 10px;
     /* border: #ce89df 1px solid; */
     /* t1 */
@@ -328,7 +342,7 @@ h4 {
 /* +++測試 */
 /* 快速報名 */
 #topbar .m_btn {
-    background-color: rgba(155,130,86,.74);
+    background-color: rgba(155, 130, 86, .74);
     border-color: #9B8256;
     border-radius: 5px;
     width: 160px;
@@ -349,6 +363,11 @@ h4 {
     justify-content: center;
     align-items: center;
 
+}
+
+#topbar .logo{
+    margin-left: 100px;
+    /* border: solid 5px salmon; */
 }
 
 /* 2.news */
@@ -442,11 +461,11 @@ h4 {
 
 /* hover */
 .news_img {
-    background-image: url(img/index/index-news/smell.png);
+    background-image: url(img/index/index-news/arrow\(白\).svg);
 }
 
 .news_img :hover {
-    background-image: url(img/index/index-news/dark\ smell.png);
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
 }
 
 .news_date {
