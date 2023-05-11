@@ -494,7 +494,7 @@ h4 {
 /* 分頁排版不同 */
 #news_content {
     padding-top: 50px;
-    border: solid 5px red;
+    /* border: solid 5px red; */
 }
 
 #news_content .title {
@@ -670,7 +670,8 @@ h4 {
 
 /* news更多詳情+media瞭解課程 */
 
-#news_page a,
+/* #news_page a, */
+#news_page .more a,
 #media_page a {
     display: flex;
     text-decoration: none;
@@ -765,6 +766,17 @@ h4 {
 .media_page_img img {
     width: 750px;
     padding-top: 10px;
+}
+
+/* 查看上一則 查看下一則 */
+.news_page_arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px blue; */
+   
+
 }
 
 /* -------------------------media-------------------- */
