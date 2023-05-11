@@ -244,7 +244,7 @@ h4 {
 /* 1.2topbar green  */
 /* 精簡code +a +svg+btn */
 /* 字距色彩大小 */
-#topbar  {
+#topbar {
     background-color: #3C4935;
     /* background-color: (255,255,255,0.05); */
     display: flex;
@@ -365,12 +365,13 @@ h4 {
 
 }
 
-#topbar .logo{
+#topbar .logo {
     margin-left: 100px;
     /* border: solid 5px salmon; */
 }
 
 /* 2.news */
+/* 和單一分頁各一個 */
 #news {
     /* display: flex; */
     /* justify-content: space-between; */
@@ -489,9 +490,11 @@ h4 {
     /* margin: 5 5 0 5px; */
 }
 
-/* 3.news_content */
+/* 3.  1-2news_content */
+/* 分頁排版不同 */
 #news_content {
-    /* border: solid 5px red; */
+    padding-top: 50px;
+    border: solid 5px red;
 }
 
 #news_content .title {
@@ -520,7 +523,7 @@ h4 {
     align-items: center;*/
 }
 
-#news_content li a:hover{
+#news_content li a:hover {
     background-color: #3C4935;
     color: #fff;
     /* +++ */
@@ -597,9 +600,10 @@ h4 {
 
 
 /* ----------------------------------------news_page分頁---------------------------------------- */
-/* 4.news_page */
+/* 4. 1-3 news_page */
 /* 最新消息詳情頁 */
-#news_page ,#media_page{
+#news_page,
+#media_page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -617,7 +621,8 @@ h4 {
 /* 主要區塊 */
 /* 框住date和section的範圍block */
 /* 水平 */
-.news_page_block,.media_page_block {
+.news_page_block,
+.media_page_block {
     background-color: #F0F0F0;
     /* opacity: 0.3; */
     display: flex;
@@ -652,7 +657,8 @@ h4 {
 }
 
 /* 中間右邊內文區塊 */
-.news_page_section ,.media_page_section {
+.news_page_section,
+.media_page_section {
     background-color: #F0F0F0;
     color: #1D201D;
     width: 900px;
@@ -664,7 +670,8 @@ h4 {
 
 /* news更多詳情+media瞭解課程 */
 
-#news_page a ,#media_page a {
+#news_page a,
+#media_page a {
     display: flex;
     text-decoration: none;
     background-color: #3C4935;
@@ -695,7 +702,8 @@ h4 {
 } */
 
 /* 文字內容 */
-.news_page_text,.media_page_text {
+.news_page_text,
+.media_page_text {
     font-size: 14px;
     color: #1D201D;
     letter-spacing: 1px;
@@ -713,7 +721,8 @@ h4 {
     justify-content: space-around;
 }
 
-.news_page_main,.media_page_main {
+.news_page_main,
+.media_page_main {
     position: relative;
     /* border: #799ed5 5px solid; */
 }
@@ -728,28 +737,32 @@ h4 {
     /* border: #7a15d3 5px solid; */
 }
 
-.news_page_gray ,.media_page_gray{
+.news_page_gray,
+.media_page_gray {
     background-color: #F0F0F0;
     /* border: #b973be 5px solid; */
     color: #F0F0F0;
 
 }
 
-.news_page_title h1,.media_page_title h1 {
+.news_page_title h1,
+.media_page_title h1 {
     font-size: 24px;
     color: #1D201D;
     letter-spacing: 2px;
     line-height: 1.2rem;
 }
 
-.news_page_text p,.media_page_text p {
+.news_page_text p,
+.media_page_text p {
     line-height: 1.2rem;
     margin: 20px 0;
     /* border: solid 1px blue; */
 }
 
 /* 最新消息圖片 */
-.news_page_img img,.media_page_img img {
+.news_page_img img,
+.media_page_img img {
     width: 750px;
     padding-top: 10px;
 }
@@ -758,12 +771,14 @@ h4 {
 /* 共用區 */
 
 
-/* media */
-
+/* 2-1media */
+/* 首頁和單一分頁各一個 */
 #media {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    /* border: solid 5px rgb(242, 207, 207); */
 }
 
 /* 整個區塊 */
@@ -776,22 +791,71 @@ main {
     /* border: solid 5px red; */
 }
 
-button {
+#media ul {
+    display: flex;
+    justify-content: center;
+}
+
+/* +++0511 */
+/* 選單區 */
+#media li {
+    padding: 5px 5px;
+    margin: 0 5px;
+    /* display: flex;
+    text-align: center;
+    align-items: center; */
+    /* background-color: #E7E4DB; */
+}
+
+#media li a:hover{
+    background-color: #3C4935;
+    color: #fff;
+    /* +++ */
+    display: block;
+    text-decoration: none;
     width: 180px;
     height: 40px;
-    /* margin: 5px 10px; */
-    border: solid 2px #F0F0F0;
+    border: solid 2px #E7E4DB;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* 單一按鈕 */
+#media li a {
+    display: block;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    border: solid 2px #E7E4DB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+button {
+    /* width: 180px;
+    height: 40px; */
+    /* margin: 5px 10px; */
+    /* border: solid 2px #F0F0F0;
+    border-radius: 5px;
+    background-color: #3C4935; */
+  
     /* border: solid 5px red;  */
 }
 
 /* 按鈕文字 */
-button a {
+/* button a {
     display: flex;
     justify-content: center;
     font-size: 14px;
-    /* border: solid 5px red;  */
-}
+    color: #fff;
+    border: solid 5px red; 
+} */
 
 /* 圖片 */
 #media figure img {
@@ -839,7 +903,7 @@ button a {
 }
 
 /* 整個中間區塊 */
-.list_block{
+.list_block {
     padding: 10px;
     margin: 10px 0;
     /* border: solid 5px rgb(222, 170, 230); */
@@ -854,15 +918,20 @@ p {
     /* border: solid 5px rgb(197, 230, 170); */
 }
 
+#media h1{
+    padding-bottom:20px ;
+}
+
 #media h3 {
     color: #5C5C5C;
 }
 
 
 
-/* media_page */
-
-#media_page h2, #media_page h3{
+/*2-2 media_page */
+/* 分頁 */
+#media_page h2,
+#media_page h3 {
     color: #797474;
 }
 
@@ -880,14 +949,14 @@ p {
 
 
 /* 圖片間距 */
-#media_page img{
+#media_page img {
     /* padding: 5px  0 0 0; */
     margin: 10px 0;
     /* border: solid 1px red; */
 }
 
 /* 瞭解課程間距 */
-.media_page_word{
+.media_page_word {
     margin-bottom: 20px;
     /* border: solid 1px red; */
 }
@@ -895,7 +964,8 @@ p {
 
 
 /* +++ */
-/* media_content */
+/* 2-3media_content */
+/* 在media詳情頁的最下面區塊 */
 #media_content {
     /* vertical-align: middle; */
     height: 100vh;
@@ -916,9 +986,9 @@ p {
 }
 
 /* 標題區 */
-.media_content_nav{
+.media_content_nav {
     /* position: relative; */
-    padding: 15px  5px 5px 10px;
+    padding: 15px 5px 5px 10px;
     height: 80px;
     /* t */
     display: flex;
@@ -933,7 +1003,7 @@ p {
 
 #media hr {
     width: 700px;
-    background-color:#797474;
+    background-color: #797474;
     margin: 30px 0;
 }
 
@@ -948,7 +1018,7 @@ p {
     top: 0; */
     /* border: solid 5px red; */
     width: 700px;
-    margin-right:10px ;
+    margin-right: 10px;
 
 }
 
@@ -965,7 +1035,7 @@ p {
     height: 400px;
     /* border: solid 5px rgb(159, 214, 236); */
     padding: 0 10px;
-    margin:0 10px ;
+    margin: 0 10px;
     /* display: flex;
     justify-content: space-between; */
 }
@@ -1026,24 +1096,9 @@ p {
     display: flex;
     /* justify-content: center; */
     padding: 10px 10px 0 10px;
-    margin: 20px  10px 50px 10px;
-   
+    margin: 20px 10px 50px 10px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 #footer {
@@ -1053,7 +1108,7 @@ p {
     justify-content: space-around;
     align-items: center;
     /* margin-top: 1px; */
-    margin-top: 250px ;
+    margin-top: 250px;
     /* border: solid 5px red; */
 
 }
