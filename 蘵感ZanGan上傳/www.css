@@ -941,7 +941,6 @@ hr {
 
 /* 向右圈圈箭頭 */
 #news .arrow {
-    /* padding:20px 0; */
     padding-top: 20px;
     margin: 10px;
     /* border: solid 5px rgb(243, 235, 190) */
@@ -958,7 +957,14 @@ hr {
     line-height: 1.5rem;
 }
 
+/* :hover */
+#news .arrow img {
+    background-image: url(img/index/index-news/arrow\(白\).svg);
+}
 
+#news .arrow img:hover {
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
+}
 
 
 
