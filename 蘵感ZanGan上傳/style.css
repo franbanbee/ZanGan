@@ -213,8 +213,8 @@ h4 {
 
 .more {
     font-size: 14px;
-    /* color: #1D201D; */
-    color: red;
+    color: #1D201D;
+    /* color: red; */
     letter-spacing: 2px;
     padding: 5px 0;
 }
@@ -360,137 +360,64 @@ hr {
     z-index: 1;
 }
 
-/* 1.topbar white  */
-/* 精簡code +a +svg+btn */
-/* 字距色彩大小 */
-#topbar {
-    background-color: rgba(255, 255, 255, 0.05);
+/* 1.1 1.2topbar white green 精簡+100%  */
+#topbar,#topbarw{
+    background-color: #3C4935;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #fff;
-    height: 10vh;
-    position: absolute;
+    text-align: center;
+    padding: 0 5px;
+    height: 80px;
+    /* 固定捲軸 */
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 999;
     width: 100%;
 }
+#topbarw{
+    background-color: rgba(255,255,255,0.05);
+    
+}
 
-#topbar a {
+/* 各別區域 */
+#topbar ul ,#topbarw ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 單個 */
+#topbar li ,#topbarw li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    /* border: solid 3px pink; */
+    
+}
+
+/* 單個文字 */
+#topbar h3,#topbarw h3{
     color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+    /* border: solid 3px pink; */
 }
-
-#topbar ul {
-    display: flex;
-}
-
-.menu {
-    width: 500px;
-    margin-right: 100px;
-    padding: 0 0px;
-    /* border: solid 5px red; */
-    /* +++0510 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    margin-left: 350px;
-    /* border: #f00e0e 5px solid;  */
-}
-
-#topbar li {
-    display: flex;
-    /* align-items: center; */
-    /* +++ */
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 10px 5px; */
-    margin: 10px;
-    /* border: #ce89df 1px solid; */
-    /* t1 */
-    width: 70px;
-}
-
-#topbar span {
-    padding-left: 5px;
-}
-
-/* 玻璃擬態 */
-/* 0.原本的底色 */
-.signup {
-    background-color: #9B8256;
-    opacity: 100%;
-    /* +++沒反應 */
-    width: 160px;
-    height: 30px;
-    /* 以上+++ */
-    padding: 10px 80px;
-    margin: 0 10px;
-    /* +++ */
-
-    z-index: 1;
-    position: relative;
-    /* border: #8994df 5px solid; */
-}
-
 
 /* 快速報名 */
-/* 0.原本 */
-.word {
-    z-index: 99;
-    position: absolute;
+.signup{
     display: flex;
-    /* border: #89dfa3 5px solid; */
-    justify-content: center;
-    align-items: center;
-    /* +++ */
-    padding: 0 20px;
-}
-
-
-/* +++測試 */
-/* 快速報名 */
-#topbar .m_btn {
-    background-color: rgba(155, 130, 86, .74);
-    border-color: #9B8256;
-    border-radius: 5px;
-    width: 160px;
-    height: 35px;
-    margin-right: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#topbar .m_btn a {
-    margin-right: 15px;
-}
-
-/* 快速報名+玻璃擬態 */
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#topbar .logo{
-    margin-left: 100px;
-    /* border: solid 5px salmon; */
+    background-color: rgba(155,130,86,.74);
+    padding: 5px;
+    margin: 0 20px;
 }
 
 /* 2.banner */
 #banner{
-    height: 100vh;
+    height: 80vh;
     /* border: solid 5px rgb(186, 229, 181); */
     display: flex;
     flex-direction: column;
@@ -510,6 +437,7 @@ hr {
     
 }
 
+/* 背景影片MP4 */
 #banner video {
     position: absolute;
     top: 0;
@@ -521,6 +449,21 @@ hr {
     height: 100%;
     
 }
+
+/* 背景影片gif img */
+/* gif影片模糊不使用 */
+#banner .bgvideo img,
+#banner .bgvideo figure{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; */
+    /* RWD物件填滿 */
+    /* object-fit: cover;
+    width: 100%;
+    height: 100%; */
+    /* border: solid 5px rgb(222, 176, 215); */
+} 
 
 #banner .logo{
     /* z-index: 999; */
@@ -574,6 +517,8 @@ hr {
 #banner h3{
     margin: 10px;
 }
+
+
 /* 3.about */
 #about {
     position: relative;
@@ -820,28 +765,12 @@ hr {
     left: 0;
     bottom: 0;
     z-index: 99;
-    /* test */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-between;
-    vertical-align:middle; */
-    /* t7 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 查看更多 */
-.course_more {
-    display: block;
-    text-align: left;
-    margin-left:  10px;
-    margin-top: 40px;
-    bottom: 0;
-    /* border: solid 5px rgb(205, 231, 133); */
-    /* border-style: hidden; */
-    /* padding: 0 5px; */
-}
-
-/* 查看更多 */
+/* 往右箭頭查看更多 */
 #course a {
     text-decoration: none;
     color: #fff;
@@ -849,8 +778,6 @@ hr {
     letter-spacing: 2px;
 
 }
-
-/* test */
 
 /* 文字內容 用鮮花~ */
 #course p {
@@ -860,6 +787,10 @@ hr {
     letter-spacing: 2px;
     line-height: 1.4;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* test2 */
@@ -1346,3 +1277,5 @@ hr {
     color: #E7E4DB;
     
 }
+
+
