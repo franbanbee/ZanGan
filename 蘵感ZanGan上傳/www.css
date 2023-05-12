@@ -679,24 +679,27 @@ hr {
     width: 85%;
     height: 80vh;
     /* border: solid 2px rgb(192, 232, 255); */
-    
+
 }
 
 /* 上下相對位置 */
 /* 共用上面行 */
-.item1,.item3,.item5 {
+.item1,
+.item3,
+.item5 {
     position: absolute;
     top: 50px;
 }
 
 /* 共用下面行 */
-.item2,.item4{
+.item2,
+.item4 {
     position: absolute;
     top: 150px;
 }
 
 /* 獨立距離 */
-.item1{
+.item1 {
     left: 80px;
 }
 
@@ -706,7 +709,7 @@ hr {
 
 .item3 {
     left: 500px;
-} 
+}
 
 .item4 {
     left: 710px;
@@ -714,7 +717,7 @@ hr {
 
 .item5 {
     left: 920px;
-} 
+}
 
 /* 單一區塊 */
 #course li {
@@ -766,9 +769,7 @@ hr {
 }
 
 /* 調整每個區塊相對的上下位置 */
-.item1 {
-   
-}
+.item1 {}
 
 /* 5.teachers */
 #teachers {
@@ -882,142 +883,96 @@ hr {
 
 /* 6.news  */
 #news {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    position: relative;
-    /* 把上下區塊連在一起 才不會有空白  */
-    border: solid 1px #F0F0F0;
     height: 100vh;
-    /* t */
-    /* height: 20vh; */
-    height: 17vh;
-    background-color: #F0F0F0;
-}
-
-/* 圖片的範圍 */
-.news_main {
-    /* width: 300px; */
-    /* height: 500px; */
-    position: absolute;
-    left: 0;
-    top: 0;
-    /* border: solid 5px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 5px rgb(208, 148, 148); */
 }
 
 /* 左邊圖片 */
-.news_main img {
+#news .pho img {
     height: 100vh;
+    width: 100%;
+    /* border: solid 5px rgb(190, 228, 243) */
 }
 
-#news.title {
-    background-color: #F0F0F0;
+/* 右邊內容區塊 */
+#news .uu{
+    padding: 10px;
+    margin: 30px;
+    /* border: solid 5px rgb(243, 224, 190) */
+
 }
-
-/* 主要文字內容區塊 */
-#news .news_col {
-    width: 700px;
-    height: 620px;
-    margin: 40px 650px;
-    /* border: solid 5px red; */
-    /* t1 */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: left; */
-}
-
-/* hr */
-/* .news_hrline {
-    width: 700px;
-} */
-
-/* news 標題區塊 */
-#news nav {
+/* 標題列 */
+#news .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 88%;
     position: relative;
-    width: 700px;
-    height: 80px;
-    /* 原本 */
-    /* padding: 15px 0;
-    margin: 10px 0; */
-    /* border: solid 5px rgb(144, 178, 213); */
+    padding-top:10px ;
+    /* border: solid 5px rgb(190, 228, 243) */
 }
 
 /* 查看更多 */
-.news_more {
-    vertical-align: bottom;
+#news .more {
+    padding-top: 20px;
     position: absolute;
-    right: -20px;
-    top: -8px;
-    line-height: 30px;
-    padding: 1px;
-    margin: 10px;
-    /* border: solid 5px rgb(144, 178, 213); */
-}
-
-/* news內容區塊 */
-.news_news {
-    position: relative;
-    padding: 5px 0;
-    margin: 3px 0;
-    width: 700px;
-    height: 100px;
-    /* border: solid 5px rgb(144, 178, 213); */
-}
-
-/* icon右圈圈箭頭 */
-.news_img {
-    position: absolute;
+    top: 10px;
     right: 0;
-    bottom: 10px;
-    width: 48px;
-    height: 48px;
-    margin: 20px;
-    /* border: solid 5px rgb(144, 178, 213); */
 }
 
-/* :hover */
-.news_img {
-    background-image: url(img/index/index-news/arrow\(白\).svg);
+/* 內容大區塊 */
+#news .kk{
+    position: relative;
+    /* border: solid 5px rgb(190, 228, 243); */
 }
 
-.news_img :hover {
-    background-image: url(img/index/index-news/arrow\(黑\).svg);
+/* 內容小區塊 */
+#news .box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    /* border: solid 5px rgb(230, 190, 243); */
 }
 
-.news_date {
-    font-size: 14px;
-    color: #1d201d;
-    letter-spacing: 2px;
-    padding: 10px;
-    margin: 10 0px;
-    text-align: start;
-    width: 700px;
+
+/* 向右圈圈箭頭 */
+#news .arrow {
+    /* padding:20px 0; */
+    padding-top: 20px;
+    margin: 10px;
+    /* border: solid 5px rgb(243, 235, 190) */
 }
 
-.news_text {
-    font-size: 16px;
-    color: #1d201d;
-    letter-spacing: 2px;
-    padding: 10px;
-    margin: 10 0px;
-    text-align: start;
-    width: 700px;
-}
-
+/* hr */
 #news hr {
-    /* padding: 5px; */
-    /* color: #797474; */
-    border-color: #797474;
-    margin: 20px 0;
-    /* margin: 5 5 0 5px; */
+    margin-top: 15px;
+    width: 570px;
 }
 
-#news h1 {
-    font-size: 34px;
-    color: #1D201D;
+/*活動快訊  */
+#news h2{
+    line-height: 1.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 7.media */
