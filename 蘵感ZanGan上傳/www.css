@@ -775,11 +775,9 @@ hr {
     color: #1d201d;
     background-color: #F0F0F0;
     height: 100vh;
-    /* test */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: solid 5px rgb(244, 184, 184); */
     position: relative;
 }
 
@@ -787,20 +785,7 @@ hr {
 #teachers li {
     color: #1d201d;
     position: relative;
-    /* display: inline-block; */
-    /* margin: 5px 0; */
-    /* border: solid 5px red; */
 }
-
-/* 師資名字 */
-/* .teachers_name {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: #fff solid 1px;
-    border-style: hidden;
-    color: #fff;
-} */
 
 /* 師資名字 */
 #teachers h2 {
@@ -812,7 +797,6 @@ hr {
     top: 10px;
 }
 
-/* t2 */
 #teachers h4 {
     color: #fff;
     font-size: 14px;
@@ -825,9 +809,6 @@ hr {
     width: 230px;
     height: 350px;
     display: flex;
-    /* t9 */
-    /* padding: 5px; */
-    /* margin: 10px; */
 }
 
 /* 綠色方塊區 */
@@ -837,15 +818,11 @@ hr {
     color: #fff;
     width: 70px;
     height: 300px;
-    /* /* text-align: center; */
-    /* display: flex;
-    justify-content: center; */
     letter-spacing: 0.045em;
     position: absolute;
     right: 15px;
     bottom: -10px;
     z-index: 99;
-
 }
 
 /* 師資學歷 */
@@ -856,7 +833,6 @@ hr {
     font-size: 14px;
     letter-spacing: 5px;
     font-weight: lighter;
-
 }
 
 /* 師資擅長 */
@@ -869,19 +845,8 @@ hr {
     font-weight: lighter;
 }
 
-
-/* test */
-/* #teachers hr{
-    width: 650px;
-    color: #797474;
-    display: flex;
-    justify-self: start;
-    border: solid 5px #797474;
-} */
-
 /* 五個圖片區域 */
 #teachers ul {
-    /* border: solid 5px rgb(214, 210, 161); */
     display: flex;
     justify-content: flex-end;
     margin-top: 130px;
@@ -896,18 +861,14 @@ hr {
 .n {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    /* border: solid 5px #8d5c5c; */
     position: absolute;
-    left: 200px;
+    left: 60px;
     top: 0;
-    /* margin: 20px 0; */
 }
 
 /* 整個區塊 */
 .a {
     position: relative;
-    /* border: solid 5px #83c1d0; */
 }
 
 /* bg_logo */
