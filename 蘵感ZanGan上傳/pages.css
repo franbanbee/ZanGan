@@ -847,16 +847,7 @@ p {
 /* 2-3media_content */
 /* 在media詳情頁的最下面區塊 */
 #media_content {
-    /* vertical-align: middle; */
     height: 100vh;
-    /* t */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ; */
-    /* margin-top:700px ; */
-
-    /* +++ */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -880,11 +871,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
-/* #media hr{
-    width: 500px;
-    background-color: #797474;
-} */
 
 /* logo */
 .media_logo {
@@ -914,21 +900,12 @@ p {
     /* height: 400px; */
     /* border: solid 5px rgb(159, 214, 236); */
     padding: 0 10px;
+    /* margin: 0 10px; */
     margin-bottom: 60px;
+    /* width: 80%; */
     /* display: flex;
     justify-content: space-between; */
 }
-
-/* 
-.media_col{
-    width: 400px;
-    border: #a90707d3 5px solid;
-} */
-
-/* #media img{
-    width: 350px;
-    height: 200px;
-} */
 
 /* 內文日期 */
 .media_date {
@@ -959,15 +936,6 @@ p {
     padding: 5px;
     margin: 5px;
 }
-
-/* 閱讀更多 */
-/* .media_more {
-    padding: 5px;
-    margin: 5px;
-    font-size: 14px;
-    color: #1D201D;
-    letter-spacing: 2px;
-} */
 
 /* nav區 */
 .c {
