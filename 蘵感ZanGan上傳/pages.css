@@ -821,8 +821,8 @@ p {
 /*底層logo */
 .media_page_logo {
     position: absolute;
-    top: -40px;
-    right: -160px;
+    top: -37px;
+    right: -70px;
     padding: 0 5px;
     /* margin: 0 0 0 30px; */
     /* border: #7a15d3 5px solid; */
@@ -842,27 +842,8 @@ p {
     /* border: solid 1px red; */
 }
 
-/* 分隔線 */
-.under {
-    /* width: 1500px; */
-    border-color: #797474;
-    /* border: solid 1px red; */
-    display: flex;
-    /* margin-top: 100px; */
-    /* padding-top:50px ; */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.under hr{
-    width: 1100px;
-}
 
 
-
-
-/* +++ */
 /* 2-3media_content */
 /* 在media詳情頁的最下面區塊 */
 #media_content {
@@ -900,10 +881,10 @@ p {
     align-items: center;
 }
 
-#media hr{
-    width: 700px;
+/* #media hr{
+    width: 500px;
     background-color: #797474;
-}
+} */
 
 /* logo */
 .media_logo {
@@ -929,11 +910,11 @@ p {
 
 /* 小區塊*6 */
 .media_section {
-    width: 400px;
-    height: 400px;
+    /* width: 400px; */
+    /* height: 400px; */
     /* border: solid 5px rgb(159, 214, 236); */
     padding: 0 10px;
-    margin: 0 10px;
+    margin-bottom: 60px;
     /* display: flex;
     justify-content: space-between; */
 }
@@ -996,6 +977,23 @@ p {
     padding: 10px 10px 0 10px;
     margin: 20px 10px 50px 10px;
 
+}
+
+/* 分隔線 */
+.under {
+    /* width: 1500px; */
+    border-color: #797474;
+    /* border: solid 1px red; */
+    display: flex;
+    /* margin-top: 100px; */
+    /* padding-top:50px ; */
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.under hr{
+    width: 1030px;
 }
 
 /* footer */
