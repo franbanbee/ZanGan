@@ -951,6 +951,13 @@ hr {
     /* border: solid 5px salmon; */
 }
 
+/* 整個區塊 */
+#signup .block1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px salmon;  */
+}
 /* 左半區塊 */
 #signup .dropbox {
     /* border: solid 5px salmon; */
@@ -987,7 +994,8 @@ hr {
 
 /* 課程或活動/工作坊字體顏色+hr顏色 */
 #signup span h4,
-#signup span hr {
+#signup span hr,
+#signup h2{
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
@@ -1004,7 +1012,6 @@ hr {
     border-radius: 5px;
     color: #9F9F9F;
     border-color: #D8D8D8;
-    color: #9F9F9F;
     margin-left: 60px;
 
 }
@@ -1021,3 +1028,40 @@ hr {
     padding-left: 10px;
     margin-right:30px ;
 }
+
+/* 直線hr */
+#signup .vline{
+    display: flex;
+    height: 365px;
+    width: 0;
+    /* border: solid 5px salmon; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
