@@ -768,11 +768,12 @@ hr {
 }
 
 /* 右邊內容區塊 */
-#news .uu{
+#news .uu {
     padding: 10px;
     margin: 30px;
 
 }
+
 /* 標題列 */
 #news .nav {
     display: flex;
@@ -780,7 +781,7 @@ hr {
     align-items: center;
     width: 88%;
     position: relative;
-    padding-top:10px ;
+    padding-top: 10px;
 }
 
 /* 查看更多 */
@@ -792,7 +793,7 @@ hr {
 }
 
 /* 內容大區塊 */
-#news .kk{
+#news .kk {
     position: relative;
 }
 
@@ -818,7 +819,7 @@ hr {
 }
 
 /*活動快訊  */
-#news h2{
+#news h2 {
     line-height: 1.5rem;
 }
 
@@ -832,18 +833,51 @@ hr {
 }
 
 /* 7.media */
-#media{
+#media {
+    height: 100vh;
+    /* border: solid 5px rgb(158, 211, 208); */
+}
 
+/* 上方導覽區塊 */
+#media .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 5px salmon; */
 }
 
 
+/* 標題區塊 */
+#media .nav div {
+    padding-top: 10px;
+    margin-top: 10px;
+}
 
+/* hr位置最下面 */
+#media .nav hr {
+    margin-top: 25px;
+}
 
+/* 內容大區塊 */
+#media .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 50px;
+}
 
+/* 直欄 */
+#media .main ul{
+    /* display: flex; */
+}
 
-
-
-
+/* 橫列 */
+#media .main li{
+    padding: 0 5px;
+    margin-bottom: 60px;
+    /* border: solid 5px salmon;  */
+}
 
 
 
