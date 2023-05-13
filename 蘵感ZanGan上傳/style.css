@@ -835,7 +835,6 @@ hr {
 /* 7.media */
 #media {
     height: 100vh;
-    /* border: solid 5px rgb(158, 211, 208); */
 }
 
 /* 上方導覽區塊 */
@@ -843,7 +842,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: solid 5px salmon; */
+    margin-top: 100px;
 }
 
 
@@ -869,34 +868,13 @@ hr {
 
 /* 直欄 */
 #media .main ul{
-    /* display: flex; */
 }
 
 /* 橫列 */
 #media .main li{
     padding: 0 5px;
     margin-bottom: 60px;
-    /* border: solid 5px salmon;  */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 8.footer */
 #footer {
@@ -906,41 +884,28 @@ hr {
     justify-content: space-around;
     align-items: center;
     margin-top: 400px;
-    /* border: solid 5px red; */
-
 }
 
 .footer_ul {
     display: flex;
-    /* justify-content: space-around;
-    align-items: center; */
-    /* border: solid 5px rgb(142, 221, 211); */
 }
 
 .footer_li {
     position: relative;
     width: 350px;
     height: 300px;
-    /* border: solid 5px rgb(206, 235, 171); */
-    /* t2 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 /* 上面列 */
-/* logo/access/contact */
 .footer_nav {
     margin: 30px 0;
 }
 
 /* 下面列 */
-/* copyright/icon_social media/QA */
 .footer_main {
-    /* position: absolute;
-    left: 0;
-    bottom: 0; */
-    /* border: solid 5px rgb(153, 191, 212); */
     margin: 30px 0;
 }
 
@@ -952,7 +917,6 @@ hr {
 
 #footer h1 {
     color: #fff;
-    ;
     font-size: 30px;
     font-family: 'Unna', serif;
 
