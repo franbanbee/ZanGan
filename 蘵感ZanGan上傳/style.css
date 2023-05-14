@@ -936,6 +936,11 @@ hr {
     color: #3C4935;
 }
 
+#signup h3{
+    font-family: 'Unna', serif;
+    border: solid 5px pink;
+}
+
 #signup h4 {
     color: #797474;
     font-size: 14px;
@@ -1037,8 +1042,24 @@ hr {
     /* border: solid 5px salmon; */
 }
 
+/* 右邊顯示選取課程或活動 */
+#signup .nav2{
+    /* border: solid 5px salmon;  */
+}
+/* 右邊小區塊 */
+#signup .list2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 150px;
+    /* border: solid 5px rgb(191, 225, 242);  */
+}
 
-
+/* 清單內尚未添加課程/活動 */
+#signup .list2 h2{
+    width: 250px;
+}
 
 
 
