@@ -936,9 +936,9 @@ hr {
     color: #3C4935;
 }
 
-#signup h3{
+#signup h3 {
     font-family: 'Unna', serif;
-    border: solid 5px pink;
+    /* border: solid 5px pink; */
 }
 
 #signup h4 {
@@ -957,12 +957,13 @@ hr {
 }
 
 /* 整個區塊 */
-#signup .block1{
+#signup .block1 {
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: solid 1px salmon;  */
 }
+
 /* 左半區塊 */
 #signup .dropbox {
     /* border: solid 5px salmon; */
@@ -1000,7 +1001,7 @@ hr {
 /* 課程或活動/工作坊字體顏色+hr顏色 */
 #signup span h4,
 #signup span hr,
-#signup h2{
+#signup h2 {
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
@@ -1031,11 +1032,11 @@ hr {
 /*  圈圈往右箭頭 */
 #signup .list img {
     padding-left: 10px;
-    margin-right:30px ;
+    margin-right: 30px;
 }
 
 /* 直線hr */
-#signup .vline{
+#signup .vline {
     display: flex;
     height: 365px;
     width: 0;
@@ -1043,11 +1044,12 @@ hr {
 }
 
 /* 右邊顯示選取課程或活動 */
-#signup .nav2{
+#signup .nav2 {
     /* border: solid 5px salmon;  */
 }
+
 /* 右邊小區塊 */
-#signup .list2{
+#signup .list2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1057,16 +1059,91 @@ hr {
 }
 
 /* 清單內尚未添加課程/活動 */
-#signup .list2 h2{
+#signup .list2 h2 {
     width: 250px;
 }
 
 
+/* signup suc區 報名成功區 */
+#signup .list3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup .list3 h2,
+#signup .list3 h3 {
+    color: #5C5C5C;
+    line-height: 20px;
+}
+
+#signup .list3 h1,
+#signup .list3 h4 {
+    color: #3C4935;
+    line-height: 20px;
+}
 
 
+/* 已添加課程內容區塊  */
+#signup .list3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #797474;
+    width: 600px;
+    height: 90px;
+    margin-left: 60px;
+}
 
+/* 價格區塊*/
+#signup .box2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100px;
+    /* border: solid 1px red; */
+    position: relative;
+    margin-right: 15px;
+}
 
+/* 茶藝興趣A班 */
+#signup .list3 h2{
+    margin-left: 30px;
+    width: 150px;
+    /* border: solid 1px red; */
+}
 
+/* 週五下午... */
+#signup .list3 h3{
+    margin-right: 10px;
+    /* border: solid 1px red; */
+}
+/* $8000 */
+#signup .box2 div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80px;
+    margin-bottom: 30px;
+    /* border: solid 1px rgb(191, 232, 180); */
+}
+
+/* $ */
+#signup .box2 h4{
+    /* display: flex; */
+}
+/* 8000 */
+#signup .box2 h1{
+    margin-left: 10px;
+    /* border: solid 1px rgb(156, 231, 230);  */
+}
+/* hr */
+#signup .box2 hr{
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 
 
