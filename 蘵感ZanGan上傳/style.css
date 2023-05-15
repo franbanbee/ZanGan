@@ -1116,6 +1116,7 @@ hr {
 /* 週五下午... */
 #signup .list3 h3{
     margin-right: 10px;
+    width: 300px;
     /* border: solid 1px red; */
 }
 /* $8000 */
@@ -1145,8 +1146,39 @@ hr {
     right: 0;
 }
 
+/* 活動:金工山林遊: 悠悠 */
+#signup .block2{
+    position: relative;
+    /* border: solid 5px rgb(231, 186, 156); */
+}
+/* 活動 */
+#signup .act h3{
+    background-color: #9B8256;
+    color: #fff;
+    width: 62px;
+    height: 10px;
+    border-radius: 0 5px 5px 0;
+    text-align: end;
+    line-height: 10px;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
 
+/* 4/13 */
+#signup .act h1{
+    margin-top: 20px;
+    margin-left: 30px;
+}
 
+/* 送出按鈕 */
+#signup button{
+    
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
 
 
 
