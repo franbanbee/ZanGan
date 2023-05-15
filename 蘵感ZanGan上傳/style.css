@@ -1065,7 +1065,7 @@ hr {
 
 
 /* signup suc區 報名成功區 */
-#signup .list3{
+#signup .list3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1085,7 +1085,7 @@ hr {
 
 
 /* 已添加課程內容區塊  */
-#signup .list3{
+#signup .list3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1096,7 +1096,7 @@ hr {
 }
 
 /* 價格區塊*/
-#signup .box2{
+#signup .box2 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1107,20 +1107,21 @@ hr {
 }
 
 /* 茶藝興趣A班 */
-#signup .list3 h2{
+#signup .list3 h2 {
     margin-left: 30px;
     width: 150px;
     /* border: solid 1px red; */
 }
 
 /* 週五下午... */
-#signup .list3 h3{
+#signup .list3 h3 {
     margin-right: 10px;
     width: 300px;
     /* border: solid 1px red; */
 }
+
 /* $8000 */
-#signup .box2 div{
+#signup .box2 div {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1130,16 +1131,18 @@ hr {
 }
 
 /* $ */
-#signup .box2 h4{
+#signup .box2 h4 {
     /* display: flex; */
 }
+
 /* 8000 */
-#signup .box2 h1{
+#signup .box2 h1 {
     margin-left: 10px;
     /* border: solid 1px rgb(156, 231, 230);  */
 }
+
 /* hr */
-#signup .box2 hr{
+#signup .box2 hr {
     width: 15px;
     position: absolute;
     bottom: 0;
@@ -1147,12 +1150,14 @@ hr {
 }
 
 /* 活動:金工山林遊: 悠悠 */
-#signup .block2{
+#signup .block2 {
     position: relative;
+    margin: 10px 0 40px 60px;
     /* border: solid 5px rgb(231, 186, 156); */
 }
+
 /* 活動 */
-#signup .act h3{
+#signup .act h3 {
     background-color: #9B8256;
     color: #fff;
     width: 62px;
@@ -1169,29 +1174,22 @@ hr {
 }
 
 /* 4/13 */
-#signup .act h1{
+#signup .act h1 {
     margin-top: 20px;
     margin-left: 30px;
 }
 
 /* 送出按鈕 */
-#signup button{
-    
+#signup button {
+    background-color: #3C4935;
+    border-radius: 50px;
+    margin-left: 60px;
     /* border: solid 5px rgb(231, 156, 165);  */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 按鈕文字 */
+#signup button h3 {
+    color: #fff;
+    width: 590px;
+    height: 20px;
+}
