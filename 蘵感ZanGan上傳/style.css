@@ -971,6 +971,7 @@ hr {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 40vh;
     /* border: solid 1px salmon;  */
 }
 
@@ -996,7 +997,7 @@ hr {
 #signup .item {
     display: flex;
     text-align: center;
-    margin: 90px 30px 60px 60px;
+    margin: 90px 30px 40px 60px;
 }
 
 /*  已添加的課程/活動*/
@@ -1057,7 +1058,7 @@ hr {
     height: 365px;
     width: 0;
     position: absolute;
-    top: 135px;
+    top: 10px;
     left: 500px;
     /* border: solid 5px salmon; */
 }
@@ -1081,7 +1082,6 @@ hr {
 #signup .list2 h2 {
     width: 250px;
 }
-
 
 /* signup suc區 報名成功區 */
 #signup .list3 {
@@ -1171,7 +1171,7 @@ hr {
 /* 活動:金工山林遊: 悠悠 */
 #signup .block2 {
     position: relative;
-    margin: 10px 0 40px 60px;
+    margin: 10px 0 30px 60px;
     /* border: solid 5px rgb(231, 186, 156); */
 }
 
@@ -1185,7 +1185,6 @@ hr {
     text-align: end;
     line-height: 10px;
     padding-right: 15px;
-    /* padding-left: 15px; */
     position: absolute;
     top: 0;
     left: 0;
