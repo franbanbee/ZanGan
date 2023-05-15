@@ -349,8 +349,16 @@ hr {
     background-color: rgba(155, 130, 86, .74);
     padding: 5px;
     margin: 0 20px;
+    font-family: "Noto Serif TC";
+    /* border: solid 5px salmon; */
 }
 
+/* 登入 */
+#topbar .login{
+    display: block;
+    text-decoration: none;
+    border: solid 5px salmon;
+}
 /* 2.banner */
 #banner {
     height: 80vh;
@@ -944,6 +952,7 @@ hr {
 #signup h4 {
     color: #797474;
     font-size: 14px;
+    /* border: solid 5px salmon; */
 }
 
 /* signup課程報名 */
@@ -1192,4 +1201,41 @@ hr {
     color: #fff;
     width: 590px;
     height: 20px;
+}
+
+/* 購物車區 */
+#signup .bold {
+    font-weight: 700;
+    line-height: 1.5rem;
+    /* border: solid 5px salmon; */
+}
+
+/* 上面導覽列 */
+#signup .nav{
+    margin-top:50px;
+    /* border: solid 5px rgb(196, 222, 244); */
+}
+/* 資料核對 */
+#signup .check {
+    color: #1d201d;
+    margin-bottom: 20px;
+    margin-left: -72px;
+    /* border: solid 5px rgb(232, 236, 182);  */
+}
+
+/*  我們將寄簡章到您的信箱：lolitama@gmail.com */
+#signup .email {
+    margin-top: 10px;
+}
+
+/* 電子信箱 */
+#signup .eng {
+    font-family: 'Unna', serif;
+    font-weight: 700;
+    /* border: solid 5px salmon; */
+}
+
+/* 灰色區塊 */
+#signup .box3 {
+    /* border: solid 5px salmon; */
 }

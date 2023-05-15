@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>報名課程</title>
+    <title>購物車</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -43,11 +43,9 @@
                 </li>
                 <li>
                     <span><img src="img/index/index-topbar/user.svg" width="20" height="20" alt="登入"></span>
-                    <span>
-                        <a href="login.html">
-                            <h3> 登入</h3>
-                        </a>
-                    </span>
+                    <span><a href="login.html">
+                            <h3>登入</h3>
+                        </a></span>
                 </li>
                 <li>
                     <a href="cart.html">
@@ -61,12 +59,29 @@
     <!-- signup -->
     <main id="signup">
         <!-- 上面導覽列 -->
-        <nav>
+        <div class="nav">
             <h3>ENROLL IN</h3>
-            <h1>報名課程</h1>
-            <h4>您好，這裡僅供預約報名的服務。如需付款之類的，看你們要不要自己過來繳費呀。<br>
-                或是我們直接上門催繳(此步驟不會有任何的門受到損害)</h4>
+            <h1>購物車</h1>
+        </div>
+        <nav class="box3">
+            <h2><span class="check"> 資料核對</span></h2>
+            <h4>
+                <span class="bold">您好，林洛洛！ </span> <br>
+                請確認以下預約的課程是否正確，謝謝配合。<br>
+                <div class="email">
+                    我們將寄簡章到您的信箱：
+                    <span class="eng">lolitama@gmail.com</span>
+                </div>
+            </h4>
         </nav>
+        <!-- <nav>
+            <h3>ENROLL IN</h3>
+            <h1>購物車</h1>
+            <h4 class="bold">您好，林洛洛！ </h4> <br>
+            <h4>請確認以下預約的課程是否正確，謝謝配合。</h4><br>
+            <h4>我們將寄簡章到您的信箱：</h4>
+            <h4 class="eng">lolitama@gmail.com</h4>
+        </nav> -->
         <!-- 整個區塊 -->
         <div class="block1">
             <!-- 左邊課程或活動下拉選單 -->
@@ -122,10 +137,43 @@
                     </span>
                 </div>
                 <!-- 右邊小區塊  -->
-                <div class="list2">
-                    <img src="img/index/index-course/logo（橢圓綜）.svg" width="55" height="90" alt="">
-                    <h2>清單內尚未添加課程/活動</h2>
+                <!-- 茶藝興趣A班 -->
+                <div class="list3">
+                    <h2>茶藝興趣A班</h2>
+                    <h3>週五下午14:00-16:00，共6堂 <br>
+                        3/3、3/10、3/17、3/24、3/31、4/7</h3>
+                    <!-- 已添加課程內容區塊  -->
+                    <span class="box2">
+                        <div>
+                            <h4>$</h4>
+                            <h1>8000</h1>
+                        </div>
+                        <hr>
+                    </span>
                 </div>
+                <!-- 活動:金工山林遊: 悠悠 -->
+                <div class="list3 block2">
+                    <span class="act">
+                        <h3>活動</h3>
+                        <h1>4/13</h1>
+                        <h2>金工山林遊: 悠悠</h2>
+                    </span>
+                    <h3>下午14:00-16:00，共1堂</h3>
+                    <!-- 已添加課程內容區塊  -->
+                    <span class="box2">
+                        <div>
+                            <h4>$</h4>
+                            <h1>8000</h1>
+                        </div>
+                        <hr>
+                    </span>
+                </div>
+                <!-- 送出 -->
+                <button>
+                    <a href="#">
+                        <h3>送出</h3>
+                    </a>
+                </button>
             </div>
         </div>
 
