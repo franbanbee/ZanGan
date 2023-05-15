@@ -970,6 +970,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* border: solid 1px salmon;  */
 }
 
@@ -1019,6 +1020,7 @@ hr {
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
+    /* border: solid 3px pink; */
 }
 
 /* 下拉選單 */
@@ -1054,6 +1056,9 @@ hr {
     display: flex;
     height: 365px;
     width: 0;
+    position: absolute;
+    top: 135px;
+    left: 500px;
     /* border: solid 5px salmon; */
 }
 
