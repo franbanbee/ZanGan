@@ -998,6 +998,11 @@ hr {
     margin: 90px 30px 60px 60px;
 }
 
+/*  已添加的課程/活動*/
+#signup .box1{
+    /* border: solid 5px salmon; */
+}
+
 /* 課程或活動 :hover效果 */
 #signup .box1 h4:hover,
 #signup .box1 hr:hover {
@@ -1211,8 +1216,8 @@ hr {
 }
 
 /* 上面導覽列 */
-#signup .nav{
-    margin-top:50px;
+#signup .nav,#signup .nav2{
+    margin-top:55px;
     /* border: solid 5px rgb(196, 222, 244); */
 }
 /* 資料核對 */
