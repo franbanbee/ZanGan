@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>購物車</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -74,83 +76,44 @@
                 </div>
             </h4>
         </nav>
-        <!-- <nav>
-            <h3>ENROLL IN</h3>
-            <h1>購物車</h1>
-            <h4 class="bold">您好，林洛洛！ </h4> <br>
-            <h4>請確認以下預約的課程是否正確，謝謝配合。</h4><br>
-            <h4>我們將寄簡章到您的信箱：</h4>
-            <h4 class="eng">lolitama@gmail.com</h4>
-        </nav> -->
         <!-- 整個區塊 -->
         <div class="block1">
-            <!-- 左邊課程或活動下拉選單 -->
-            <div>
-                <!-- 小標題區 -->
-                <div class="item">
-                    <span class="box1">
-                        <h4>課程</h4>
-                        <hr>
-                    </span>
-                    <span class="box1">
-                        <h4>活動/工作坊</h4>
-                        <hr>
-                    </span>
-                </div>
-                <!-- 課程類別:-->
-                <label for="ccourse"></label>
-                <select name="ccourse" id="ccourse">
-                    <option value="">課程類別:</option>
-                    <option value="藝術插花">藝術插花</option>
-                    <option value="自由繪畫">自由繪畫</option>
-                    <option value="蘵感手作">蘵感手作</option>
-                    <option value="香水特製Lab">香水特製Lab</option>
-                    <option value="小點茶藝工坊">小點茶藝工坊</option>
-                </select>
-                <!-- 課堂名稱: -->
-                <label for="name"></label>
-                <select name="name" id="name">
-                    <option value="">課程名稱:</option>
-                    <option value="藝術插花">藝術插花</option>
-                    <option value="自由繪畫">自由繪畫</option>
-                    <option value="蘵感手作">蘵感手作</option>
-                    <option value="香水特製Lab">香水特製Lab</option>
-                    <option value="小點茶藝工坊">小點茶藝工坊</option>
-                </select>
-                <!-- 加入預約清單 -->
-                <div class="list">
-                    <h4>加入預約清單</h4>
-                    <img src="img/index/index-news/arrow(白).svg" alt="">
-                </div>
-            </div>
-            <!-- 垂直線 -->
-            <span class="vline">
-                <hr>
-            </span>
             <!-- 右邊顯示選取課程或活動 -->
             <div class="nav2">
                 <!-- 小標題區 -->
                 <div class="item">
-                    <span class="box1">
-                        <h4>已添加的課程/活動</h4>
+                    <div class="box4">
+                        <div>
+                            <h3>Course</h3>
+                            <h3 class="price">Price</h3>
+                            <h3>Quantity</h3>
+                            <h3>Subtotal</h3>
+                        </div>
                         <hr>
-                    </span>
+                    </div>
                 </div>
                 <!-- 右邊小區塊  -->
                 <!-- 茶藝興趣A班 -->
-                <div class="list3">
+                <div class="list4">
                     <h2>茶藝興趣A班</h2>
                     <h3>週五下午14:00-16:00，共6堂 <br>
                         3/3、3/10、3/17、3/24、3/31、4/7</h3>
                     <!-- 已添加課程內容區塊  -->
-                    <span class="box2">
+                    <span class="box2 box5">
                         <div>
                             <h4>$</h4>
                             <h1>8000</h1>
                         </div>
                         <hr>
                     </span>
+                    <!-- 數量增減 -->
+                    <div class="box">
+                        <div class="minus">-</div>
+                        <div class="num">1</div>
+                        <div class="add">+</div>
+                    </div>
                 </div>
+                <!-- <hr> -->
                 <!-- 活動:金工山林遊: 悠悠 -->
                 <div class="list3 block2">
                     <span class="act">
@@ -176,17 +139,6 @@
                 </button>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <!-- 8.footer -->
