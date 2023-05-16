@@ -943,7 +943,9 @@ hr {
 #signup h1,
 #signup h2,
 #signup h3,
-#signup .box5 h4 {
+#signup .box5 h4,
+#signup .box9 h4,
+#signup .box9 h1 {
     color: #3C4935;
 }
 
@@ -1444,4 +1446,59 @@ hr {
 #signup .box9{
     margin-left: 170px;
     margin-top: 50px;
+}
+
+/* 購物車總計 區塊*/
+#signup .total{
+    width: 400px;
+    margin-left: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid 5px salmon;  */
+}
+
+/* cart short hr */
+#signup .total hr{
+    width: 400px;
+}
+
+/* 購物車總計 */
+#signup .total h2{
+    color: #1d201d;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 100px;
+    /* border: solid 5px rgb(220, 152, 211); */
+}
+
+/* $8000 */
+#signup .total .box9 div{
+    position: absolute;
+    right: -130px;
+    top: -85px;
+    margin-right: 20px;
+    /* border: solid 5px rgb(218, 194, 149); */
+}
+
+/* 送出預約訂單 */
+#signup button{
+    width: 320px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+/* 送出預約訂單 */
+#signup .sent{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+/* 上一個步驟 Prev Step */
+#signup .more h3{
+    margin-left: 20px;
+    margin-bottom: -10px;
+    /* border: solid 5px salmon; */
 }
