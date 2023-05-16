@@ -977,6 +977,7 @@ hr {
     align-items: center;
     position: relative;
     height: 40vh;
+    margin-top: 100px;
     /* border: solid 1px salmon;  */
 }
 
@@ -985,7 +986,7 @@ hr {
     /* border: solid 5px salmon; */
 }
 
-/* 上面導覽區 */
+/* 資料核對區 */
 #signup nav {
     display: flex;
     flex-direction: column;
@@ -1227,7 +1228,7 @@ hr {
 /* 上面導覽列 */
 #signup .nav,
 #signup .nav2 {
-    margin-top: 55px;
+    margin-top: 30px;
     /* border: solid 5px rgb(196, 222, 244); */
 }
 
@@ -1345,20 +1346,28 @@ hr {
 .minus,
 .num,
 .add,
-.count {
+.count,
+.minus1,
+.num1,
+.add1,
+.count1 {
     display: inline-block;
     font-size: 16px;
 }
 
 .minus,
 .num,
-.add {
+.add,
+.minus1,
+.num1,
+.add1{
     padding-left: 5px;
     padding-top: 0px;
     cursor: pointer;
 }
 
-.num {
+.num,
+.num1 {
     width: 20px;
     height: 30px;
     text-align: center;
@@ -1368,13 +1377,17 @@ hr {
 }
 
 .minus,
-.add {
+.add,
+.minus1,
+.add1{
     width: 10px;
     /* -webkit-user-select: none; */
 }
 
 .minus:hover,
-.add:hover {
+.add:hover,
+.minus1:hover,
+.add1:hover {
     background-color: #666;
     color: #fff;
 }
@@ -1452,6 +1465,7 @@ hr {
 #signup .total{
     width: 400px;
     margin-left: 665px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
