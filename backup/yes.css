@@ -1492,9 +1492,14 @@ hr {
     align-items: center;
     width: 1000px;
     margin: 20px auto;
+    height: 80px;
     /* border: solid 5px salmon; */
 }
 
+/* 茶藝上下間距 */
+#cart .space{
+    /* margin: 30px auto; */
+}
 /* cart茶藝興趣A班  */
 #cart .tea h3 {
     margin: 0 80px;
@@ -1506,17 +1511,17 @@ hr {
 }
 
 /* cart $8000區塊 */
-#cart .money {
+#cart .money{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-    /* border: solid 5px salmon; */
+    /* border: solid 5px rgb(170, 229, 212); */
 }
 
 /* $ */
 #cart .money h4,
-#cart .subtotal {
+#cart .subtotal h4 {
     margin-top: 5px;
     margin-right: 20px;
 }
@@ -1640,13 +1645,60 @@ hr {
     margin-right: 90px;
 }
 
+/* total購物車總計 */
+#cart .total{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 50px auto ;
+    width: 1000px;
+    /* border: solid 5px salmon; */
+}
 
+/* 購物車總計NT$8000文字區塊 */
+#cart .total_money{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
 
+/* 購物車總計 */
+#cart .total_money h2,
+#cart .total_money .nt{
+    margin: 0 30px;
+}
+/* short hr */
+#cart hr{
+    width: 300px;
+    height: 0;
+}
 
+/* NT$8000 */
+#cart .nt{
+    display: flex;
+}
 
+/* NT$ */
+#cart .nt h4{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/* 送出預約訂單 */
+#cart button {
+    background-color: #3C4935;
+    border-radius: 50px;
+    margin-left: 60px;
+    width: 380px;
+    height: 40px;
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
 
-
-
+/* 送出預約訂單文字 */
+#cart button h3 {
+    color: #fff;
+}
 
 
 
