@@ -1407,6 +1407,7 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 20px auto;
+    padding: 10px 0;
     /* border: solid 5px salmon; */
 }
 
@@ -1417,8 +1418,6 @@ hr {
     align-items: flex-start;
     /* border: solid 5px salmon; */
 }
-
-
 
 /* 字的顏色 */
 #cart .deta h2{
@@ -1448,6 +1447,7 @@ hr {
     font-size: 14px;
     color: #797474;
     letter-spacing: 2px;
+    margin: 10px 0;
 }
 /* lolitama@gmail.com */
 #cart .deta .eng{
@@ -1457,26 +1457,17 @@ hr {
     font-family: 'Unna', serif ;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*cart: Course Price Quantity Subtotal 區塊 */
-#cart .box4 div {
+#cart .bar div  {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 105px;
+    margin-right: auto;
 }
 
 /*cart: Course Price Quantity Subtotal 單一個 */
-#cart .box4 h3 {
+#cart .bar h3 {
     margin-right: 90px;
     /* border: solid 5px salmon;  */
 }
@@ -1486,36 +1477,32 @@ hr {
     margin-left: 400px;
 }
 
+/* cart hr長度  */
+#cart .hrb{
+    width: 1000px;
+    margin:15px auto 50px auto;
+}
+
 /* cart茶藝興趣A班區塊 */
-#cart .list4,
-#cart .list5 {
+#cart .tea{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 1000px;
-    margin-left: 60px;
+    margin: 0 auto;
     /* border: solid 5px salmon; */
 }
 
-/* cart hr長度  */
-/* #cart .item hr, */
-#cart .hrb{
-    width: 1000px;
-    border-color: #797474;
-    
-}
-
-/* cart 分隔線 */
-#cart .hrb {
-    margin-left: 60px;
-    margin-top: 20px;
-}
-
 /* cart茶藝興趣A班  */
-#cart .list4 h2,
-#cart .list4 h3 {
-    color: #5C5C5C;
+#cart .tea h2 {
 }
+
+
+
+
+
+
+
 
 /* cart $8000區塊 */
 #cart .box5 {
