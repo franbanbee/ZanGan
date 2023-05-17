@@ -122,7 +122,6 @@ section {
     display: block;
 }
 
-
 body {
     line-height: 1;
     font-family:
@@ -936,32 +935,29 @@ hr {
 
 }
 
-/*----------------- signup課程報名----------------- */
+/*----------------- signup0課程報名----------------- */
 
-/* signup共用區 */
+/* signup0共用區 */
 /* 字的顏色 */
-#signup h1,
-#signup h2,
-#signup h3,
-#signup .box5 h4,
-#signup .box9 h4,
-#signup .box9 h1 {
+#signup0 h1,
+#signup0 h2,
+#signup0 h3 {
     color: #3C4935;
 }
 
-#signup h3 {
+#signup0 h3 {
     font-family: 'Unna', serif;
     /* border: solid 5px pink; */
 }
 
-#signup h4 {
+#signup0 h4 {
     color: #797474;
     font-size: 14px;
     /* border: solid 5px salmon; */
 }
 
-/* signup課程報名 */
-#signup {
+/* signup0課程報名 */
+#signup0 {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -971,23 +967,22 @@ hr {
 }
 
 /* 整個區塊 */
-#signup .block1 {
+#signup0 .block1 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 40vh;
-    margin-top: 100px;
     /* border: solid 1px salmon;  */
 }
 
 /* 左半區塊 */
-#signup .dropbox {
+#signup0 .dropbox {
     /* border: solid 5px salmon; */
 }
 
-/* 資料核對區 */
-#signup nav {
+/* 上面導覽區 */
+#signup0 nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1000,20 +995,20 @@ hr {
 }
 
 /* 小標題區 */
-#signup .item {
+#signup0 .item {
     display: flex;
     text-align: center;
     margin: 90px 30px 40px 60px;
 }
 
 /*  已添加的課程/活動*/
-#signup .box1 {
+#signup0 .box1 {
     /* border: solid 5px salmon; */
 }
 
 /* 課程或活動 :hover效果 */
-#signup .box1 h4:hover,
-#signup .box1 hr:hover {
+#signup0 .box1 h4:hover,
+#signup0 .box1 hr:hover {
     color: #3C4935;
     border-color: #3C4935;
     background-color: #fff;
@@ -1021,9 +1016,9 @@ hr {
 }
 
 /* 課程或活動/工作坊字體顏色+hr顏色 */
-#signup span h4,
-#signup span hr,
-#signup h2 {
+#signup0 span h4,
+#signup0 span hr,
+#signup0 h2 {
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
@@ -1046,20 +1041,20 @@ hr {
 }
 
 /* 加入預約清單 */
-#signup .list {
+#signup0 .list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 /*  圈圈往右箭頭 */
-#signup .list img {
+#signup0 .list img {
     padding-left: 10px;
     margin-right: 30px;
 }
 
 /* 直線hr */
-#signup .vline {
+#signup0 .vline {
     display: flex;
     height: 365px;
     width: 0;
@@ -1070,12 +1065,12 @@ hr {
 }
 
 /* 右邊顯示選取課程或活動 */
-#signup .nav2 {
+#signup0 .nav2 {
     /* border: solid 5px salmon;  */
 }
 
 /* 右邊小區塊 */
-#signup .list2 {
+#signup0 .list2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1085,32 +1080,38 @@ hr {
 }
 
 /* 清單內尚未添加課程/活動 */
-#signup .list2 h2 {
+#signup0 .list2 h2 {
     width: 250px;
 }
 
-/* signup suc區 報名成功區 */
-#signup .list3 {
+/* signup0 suc區 報名成功區 */
+
+#signup0 nav {
+    margin-top: 50px;
+    /* border: solid 5px rgb(191, 225, 242); */
+}
+
+#signup0 .list3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#signup .list3 h2,
-#signup .list3 h3 {
+#signup0 .list3 h2,
+#signup0 .list3 h3 {
     color: #5C5C5C;
     line-height: 20px;
 }
 
-#signup .list3 h1,
-#signup .list3 h4 {
+#signup0 .list3 h1,
+#signup0 .list3 h4 {
     color: #3C4935;
     line-height: 20px;
 }
 
 
 /* 已添加課程內容區塊  */
-#signup .list3 {
+#signup0 .list3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1121,7 +1122,7 @@ hr {
 }
 
 /* 價格區塊*/
-#signup .box2 {
+#signup0 .box2 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1132,21 +1133,21 @@ hr {
 }
 
 /* 茶藝興趣A班 */
-#signup .list3 h2 {
+#signup0 .list3 h2 {
     margin-left: 30px;
     width: 150px;
     /* border: solid 1px red; */
 }
 
 /* 週五下午... */
-#signup .list3 h3 {
+#signup0 .list3 h3 {
     margin-right: 10px;
     width: 300px;
     /* border: solid 1px red; */
 }
 
 /* $8000 */
-#signup .box2 div {
+#signup0 .box2 div {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1156,18 +1157,18 @@ hr {
 }
 
 /* $ */
-#signup .box2 h4 {
+#signup0 .box2 h4 {
     /* display: flex; */
 }
 
 /* 8000 */
-#signup .box2 h1 {
+#signup0 .box2 h1 {
     margin-left: 10px;
     /* border: solid 1px rgb(156, 231, 230);  */
 }
 
 /* hr */
-#signup .box2 hr {
+#signup0 .box2 hr {
     width: 15px;
     position: absolute;
     bottom: 0;
@@ -1175,14 +1176,14 @@ hr {
 }
 
 /* 活動:金工山林遊: 悠悠 */
-#signup .block2 {
+#signup0 .block2 {
     position: relative;
     margin: 10px 0 30px 60px;
     /* border: solid 5px rgb(231, 186, 156); */
 }
 
 /* 活動 */
-#signup .act h3 {
+#signup0 .act h3 {
     background-color: #9B8256;
     color: #fff;
     width: 62px;
@@ -1198,13 +1199,13 @@ hr {
 }
 
 /* 4/13 */
-#signup .act h1 {
+#signup0 .act h1 {
     margin-top: 20px;
     margin-left: 30px;
 }
 
 /* 送出按鈕 */
-#signup button {
+#signup0 button {
     background-color: #3C4935;
     border-radius: 50px;
     margin-left: 60px;
@@ -1212,28 +1213,28 @@ hr {
 }
 
 /* 按鈕文字 */
-#signup button h3 {
+#signup0 button h3 {
     color: #fff;
     width: 590px;
     height: 20px;
 }
 
 /* 購物車區 */
-#signup .bold {
+#signup0 .bold {
     font-weight: 700;
     line-height: 1.5rem;
     /* border: solid 5px salmon; */
 }
 
 /* 上面導覽列 */
-#signup .nav,
-#signup .nav2 {
-    margin-top: 30px;
+#signup0 .nav,
+#signup0 .nav2 {
+    margin-top: 55px;
     /* border: solid 5px rgb(196, 222, 244); */
 }
 
 /* 資料核對 */
-#signup .check {
+#signup0 .check {
     color: #1d201d;
     margin-bottom: 20px;
     margin-left: -72px;
@@ -1241,105 +1242,318 @@ hr {
 }
 
 /*  我們將寄簡章到您的信箱：lolitama@gmail.com */
-#signup .email {
+#signup0 .email {
     margin-top: 10px;
 }
 
 /* 電子信箱 */
-#signup .eng {
+#signup0 .eng {
     font-family: 'Unna', serif;
     font-weight: 700;
     /* border: solid 5px salmon; */
 }
 
 /* 灰色區塊 */
-#signup .box3 {
-    width: 1000px;
-    margin-bottom: 80px;
+#signup0 .box3 {
     /* border: solid 5px salmon; */
 }
 
-/* cart 購物車區 */
-#signup .box4 {
-    /* border: solid 5px salmon;  */
-}
-
-/* cart 名稱間隔 */
-#signup .box4 h3 {
-    /* margin-right: 30px; */
-}
-
-/*cart: Course Price Quantity Subtotal 區塊 */
-#signup .box4 div {
+/* signup suc區 報名成功區 */
+#signup0 .list3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
+#signup0 .list3 h2,
+#signup0 .list3 h3 {
+    color: #5C5C5C;
+    line-height: 20px;
+}
+
+#signup0 .list3 h1,
+#signup0 .list3 h4 {
+    color: #3C4935;
+    line-height: 20px;
+}
+
+
+/* 已添加課程內容區塊  */
+#signup0 .list3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #797474;
+    width: 600px;
+    height: 90px;
+    margin-left: 60px;
+}
+
+/* 價格區塊*/
+#signup0 .box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100px;
+    /* border: solid 1px red; */
+    position: relative;
+    margin-right: 15px;
+}
+
+/* 茶藝興趣A班 */
+#signup0 .list3 h2 {
+    margin-left: 30px;
+    width: 150px;
+    /* border: solid 1px red; */
+}
+
+/* 週五下午... */
+#signup0 .list3 h3 {
+    margin-right: 10px;
+    width: 300px;
+    /* border: solid 1px red; */
+}
+
+/* $8000 */
+#signup0 .box2 div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80px;
+    margin-bottom: 30px;
+    /* border: solid 1px rgb(191, 232, 180); */
+}
+
+/* $ */
+#signup0 .box2 h4 {
+    /* display: flex; */
+}
+
+/* 8000 */
+#signup0 .box2 h1 {
+    margin-left: 10px;
+    /* border: solid 1px rgb(156, 231, 230);  */
+}
+
+/* hr */
+#signup0 .box2 hr {
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 活動:金工山林遊: 悠悠 */
+#signup0 .block2 {
+    position: relative;
+    margin: 10px 0 30px 60px;
+    /* border: solid 5px rgb(231, 186, 156); */
+}
+
+/* 活動 */
+#signup0 .act h3 {
+    background-color: #9B8256;
+    color: #fff;
+    width: 62px;
+    height: 10px;
+    border-radius: 0 5px 5px 0;
+    text-align: end;
+    line-height: 10px;
+    padding-right: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
+
+/* 4/13 */
+#signup0 .act h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* 送出按鈕 */
+#signup0 button {
+    background-color: #3C4935;
+    border-radius: 50px;
+    margin-left: 60px;
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
+
+/* 按鈕文字 */
+#signup0 button h3 {
+    color: #fff;
+    width: 590px;
+    height: 20px;
+}
+
+
+/* ------cart 購物車區------ */
+/* 上面導覽列 */
+#cart .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 資料核對區 */
+#cart nav {
+    width: 1000px;
+    background-color: rgba(240, 240, 240, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 0;
+    /* border: solid 5px salmon; */
+}
+
+#cart .deta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: solid 5px salmon; */
+}
+
+/* 字的顏色 */
+#cart .deta h2 {
+    color: #1d201d;
+}
+
+#cart .deta h3 {
+    color: #797474;
+}
+
+#cart .deta h1,
+#cart .deta h4 {
+    color: #3C4935;
+}
+
+/*  您好，林洛洛！  */
+#cart .deta .bold {
+    font-size: 14px;
+    font-weight: 700;
+    color: #797474;
+    letter-spacing: 2px;
+    /* border: solid 5px salmon; */
+}
+
+/*  請確認以下預約的課程是否正確，謝謝配合。 */
+#cart p {
+    font-size: 14px;
+    color: #797474;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+/* lolitama@gmail.com */
+#cart .deta .eng {
+    font-weight: 700;
+    color: #797474;
+    letter-spacing: 2px;
+    font-family: 'Unna', serif;
+}
+
+/*cart: Course Price Quantity Subtotal 區塊 */
+#cart .bar div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 105px;
+    margin-right: auto;
+}
+
 /*cart: Course Price Quantity Subtotal 單一個 */
-#signup .box4 h3 {
+#cart .bar h3 {
     margin-right: 90px;
     /* border: solid 5px salmon;  */
 }
 
 /* cart price間隔 */
-#signup .price {
+#cart .price {
     margin-left: 400px;
 }
 
+/* cart hr長度  */
+#cart .hrb {
+    width: 1000px;
+    margin: 0 auto;
+    border-color: #797479;
+}
+
 /* cart茶藝興趣A班區塊 */
-#signup .list4,
-#signup .list5 {
+#cart .tea {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 1000px;
-    margin-left: 60px;
+    margin: 20px auto;
+    height: 80px;
     /* border: solid 5px salmon; */
 }
 
-/* cart hr長度  */
-#signup .item hr,
-#signup .hrb {
-    width: 1000px;
-    border-color: #797474;
+/* 茶藝上下間距 */
+#cart .space{
+    /* margin: 30px auto; */
 }
-
-/* cart 分隔線 */
-#signup .hrb {
-    margin-left: 60px;
-    margin-top: 20px;
-}
-
 /* cart茶藝興趣A班  */
-#signup .list4 h2,
-#signup .list4 h3 {
+#cart .tea h3 {
+    margin: 0 80px;
+    color: #5C5C5C;
+}
+
+#cart .tea h2 {
     color: #5C5C5C;
 }
 
 /* cart $8000區塊 */
-#signup .box5 {
-    margin-left: 70px;
+#cart .money{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    /* border: solid 5px rgb(170, 229, 212); */
+}
+
+/* $ */
+#cart .money h4,
+#cart .subtotal h4 {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+/* cart subtotal */
+#cart .subtotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
     /* border: solid 5px salmon; */
 }
 
 /* cart 數量增減 */
 .box {
-    position: absolute;
-    left: 770px;
-    transform: translateX(-50%) translateY(-50%);
+    /* display: block; */
+    /* position: absolute; */
+    /* left: 770px; */
+    /* transform: translateX(-50%) translateY(-50%); */
     border: solid 2px #FFF;
     background-color: #FFF;
     color: #3C4935;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
     /* rgba(0, 0, 0, 0.5); */
-    width:  90px;
+    width: 90px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+    text-align: center;
+    margin: 0 40px;
     /* border: solid 5px salmon; */
 }
 
@@ -1360,7 +1574,7 @@ hr {
 .add,
 .minus1,
 .num1,
-.add1{
+.add1 {
     padding-left: 5px;
     padding-top: 0px;
     cursor: pointer;
@@ -1379,7 +1593,7 @@ hr {
 .minus,
 .add,
 .minus1,
-.add1{
+.add1 {
     width: 10px;
     /* -webkit-user-select: none; */
 }
@@ -1392,127 +1606,118 @@ hr {
     color: #fff;
 }
 
-/*subtotal  */
-#signup .box6 div{
-    position: absolute;
-    right: -100px;
-    top: -35px;
-    /* border: solid 5px salmon; */
-}
-
 /*cart 活動:金工山林遊: 悠悠  */
-#signup .list5{
-
+#cart .tea {
+    /* position: relative; */
 }
 
-/*cart 卡其色活動 */
-#signup .block3{
-    top: -20px;
-}
-
-/* cart act */
-#signup .list5{
-
-}
-
-/*cart字色  */
-#signup .list5 h1,
-#signup .list5 h2,
-#signup .list5 h3,
-#signup .list5 h4{
-    color: #5C5C5C;
-}
-
-/* cart 卡其色活動 */
-#signup .act h3 {
+/* 活動 */
+#cart .act h3 {
+    background-color: #9B8256;
     color: #fff;
-    left: 0px;
-    top: 10px;
-    /* border: solid 5px salmon; */
+    width: 62px;
+    height: 10px;
+    border-radius: 0 5px 5px 0;
+    text-align: end;
+    line-height: 10px;
+    padding-right: 15px;
+    /* position: absolute;  */
+    /* top: -50px; */
+    /* left: 10px; */
+    margin-left: 0.1px;
+    margin-top: -20px;
+    /* border: solid 5px rgb(231, 156, 165);  */
 }
 
-/* cart活動已添加 */
-#signup .box7{
-    margin-left: 145px;
-    margin-top: 50px;
-}
-
-/*  cart活動數量 */
-#signup .box8{
-    margin-left: -60px;
-    margin-top: 60px;
-    /* border: solid 5px salmon; */
-}
-
-/* 4/13  金工山林遊: 悠悠*/
-#signup .act{
+/* 4/13+下午14:00-16:00，共1堂 */
+#cart .act{
     margin-top: 15px;
 }
 
+/* 4/13 */
+#cart .act h1{
+    color: #5c5c5c;
+}
+
 /* 下午14:00-16:00，共1堂 */
-#signup .list5>h3{
-    margin-top: 20px;
-    /* border: solid 5px salmon; */
+#cart .noon{
+    margin-left: -55px;
+    margin-right: 90px;
 }
 
-/* cart 活動subtotal */
-#signup .box9{
-    margin-left: 170px;
-    margin-top: 50px;
-}
-
-/* 購物車總計 區塊*/
-#signup .total{
-    width: 400px;
-    margin-left: 665px;
-    margin-top: 100px;
+/* total購物車總計 */
+#cart .total{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* border: solid 5px salmon;  */
-}
-
-/* cart short hr */
-#signup .total hr{
-    width: 400px;
-}
-
-/* 購物車總計 */
-#signup .total h2{
-    color: #1d201d;
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 100px;
-    /* border: solid 5px rgb(220, 152, 211); */
-}
-
-/* $8000 */
-#signup .total .box9 div{
-    position: absolute;
-    right: -130px;
-    top: -85px;
-    margin-right: 20px;
-    /* border: solid 5px rgb(218, 194, 149); */
-}
-
-/* 送出預約訂單 */
-#signup button{
-    width: 320px;
-    height: 40px;
-    margin-top: 50px;
-}
-
-/* 送出預約訂單 */
-#signup .sent{
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-right: 60px;
-}
-
-/* 上一個步驟 Prev Step */
-#signup .more h3{
-    margin-left: 20px;
-    margin-bottom: -10px;
+    align-items: flex-end;
+    margin: 50px auto ;
+    width: 1000px;
     /* border: solid 5px salmon; */
 }
+
+/* 購物車總計NT$8000文字區塊 */
+#cart .total_money{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* 購物車總計間距 */
+#cart .total_money h2,
+#cart .total_money .nt{
+    margin: 0 40px;
+}
+/* short hr */
+#cart hr{
+    width: 350px;
+    height: 0;
+}
+
+/* NT$8000 */
+#cart .nt{
+    display: flex;
+}
+
+/* NT$ */
+#cart .nt h4{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* 送出預約訂單 */
+#cart .sent{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 140px;
+    /* border: solid 5px rgb(231, 156, 165); */
+}
+
+/* 送出預約訂單按鈕 */
+#cart button {
+    background-color: #3C4935;
+    border-radius: 50px;
+    width: 280px;
+    height: 40px;
+    /* border: solid 5px rgb(231, 156, 165);  */
+}
+
+/* 送出預約訂單文字 */
+#cart button h3 {
+    color: #fff;
+    margin: 0 auto;
+    
+}
+
+/* 上一個步驟 */
+#cart .more{
+    margin-left: 100px;
+}
+/* 上一個步驟 Prev Step */
+#cart .more h3{
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
