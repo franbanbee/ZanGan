@@ -1480,41 +1480,60 @@ hr {
 /* cart hr長度  */
 #cart .hrb{
     width: 1000px;
-    margin:15px auto 50px auto;
+    margin:0 auto;
 }
 
 /* cart茶藝興趣A班區塊 */
 #cart .tea{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     /* border: solid 5px salmon; */
 }
 
 /* cart茶藝興趣A班  */
-#cart .tea h2 {
+#cart .tea h3 {
+    margin: 0 80px;
+    color: #5C5C5C;
 }
 
-
-
-
-
-
-
+#cart .tea h2 {
+    color: #5C5C5C;
+}
 
 /* cart $8000區塊 */
-#cart .box5 {
-    margin-left: 70px;
+#cart .money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    /* border: solid 5px salmon; */
+}
+
+/* $ */
+#cart .money h4,
+#cart .subtotal{
+   margin-top: 5px;
+   margin-right: 20px;
+}
+
+/* cart subtotal */
+#cart .subtotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
     /* border: solid 5px salmon; */
 }
 
 /* cart 數量增減 */
 .box {
-    position: absolute;
-    left: 770px;
-    transform: translateX(-50%) translateY(-50%);
+    /* display: block; */
+    /* position: absolute; */
+    /* left: 770px; */
+    /* transform: translateX(-50%) translateY(-50%); */
     border: solid 2px #FFF;
     background-color: #FFF;
     color: #3C4935;
@@ -1526,7 +1545,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+    text-align: center;
+    margin: 0 40px;
     /* border: solid 5px salmon; */
 }
 
@@ -1579,13 +1599,7 @@ hr {
     color: #fff;
 }
 
-/*subtotal  */
-#cart .box6 div{
-    position: absolute;
-    right: -100px;
-    top: -35px;
-    /* border: solid 5px salmon; */
-}
+
 
 /*cart 活動:金工山林遊: 悠悠  */
 #cart .list5{
