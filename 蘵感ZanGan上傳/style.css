@@ -1482,7 +1482,7 @@ hr {
 #cart .hrb {
     width: 1000px;
     margin: 0 auto;
-    border-color: #797479;
+    border-color: #797474;
 }
 
 /* cart茶藝興趣A班區塊 */
@@ -1790,6 +1790,7 @@ hr {
 #reserve .member {
     display: block;
     text-decoration: underline;
+    color: #797474;
 }
 /* lolitama@gmail.com */
 #reserve .deta .eng {
@@ -1797,4 +1798,80 @@ hr {
     color: #797474;
     letter-spacing: 2px;
     font-family: 'Unna', serif;
+}
+
+/* popup 自動彈跳視窗 */
+#popup{
+    width: 480px;
+    height: 260px;
+    margin: 100px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    border: #797474 solid 3px;
+    position: relative;
+}
+
+/* 字的顏色 */
+#popup h1,
+#popup h3{
+    color: #797474;
+}
+
+/* close */
+#popup .close{
+    display: flex;
+    margin: 10px 10px 10px 450px ;
+    /* border: solid 5px pink; */
+}
+
+/* 已送出訂單!返回至首頁 */
+#popup div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    /* border: solid 5px pink; */
+}
+
+/* short hr */
+#popup hr{
+    border-color: #DACFB8;
+    width: 80px;
+    height: 0;
+}
+
+/* circle */
+#popup .circle{
+    position: absolute;
+    top: -40px;
+    left: 100px;
+}
+
+/* 底圖logo */
+#popup .logo{
+    position: absolute;
+    top: -70px;
+    left: 15px;
+}
+
+
+/* cp */
+/* Modal自動彈跳視窗 */
+#myModal{
+    width: 480px;
+    height: 260px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
+    border: solid 3px #797474;
+}
+
+/* close */
+#myModal .close{
+    margin-right: 10px;
+    /* border: solid 5px pink; */
 }
