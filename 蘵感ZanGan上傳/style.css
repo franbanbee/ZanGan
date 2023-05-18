@@ -1621,12 +1621,8 @@ hr {
     text-align: end;
     line-height: 10px;
     padding-right: 15px;
-    /* position: absolute;  */
-    /* top: -50px; */
-    /* left: 10px; */
     margin-left: 0.1px;
     margin-top: -20px;
-    /* border: solid 5px rgb(231, 156, 165);  */
 }
 
 /* 4/13+下午14:00-16:00，共1堂 */
@@ -1653,7 +1649,6 @@ hr {
     align-items: flex-end;
     margin: 50px auto ;
     width: 1000px;
-    /* border: solid 5px salmon; */
 }
 
 /* 購物車總計NT$8000文字區塊 */
@@ -1692,7 +1687,6 @@ hr {
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 140px;
-    /* border: solid 5px rgb(231, 156, 165); */
 }
 
 /* 送出預約訂單按鈕 */
@@ -1701,7 +1695,6 @@ hr {
     border-radius: 50px;
     width: 280px;
     height: 40px;
-    /* border: solid 5px rgb(231, 156, 165);  */
 }
 
 /* 送出預約訂單文字 */
@@ -1721,3 +1714,87 @@ hr {
     margin-bottom: -10px;
 }
 
+/* reserve 預約成功區 */
+#reserve{
+
+}
+
+/* 上面導覽列 */
+#reserve .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 資料核對區 */
+#reserve nav {
+    width: 1000px;
+    background-color: rgba(240, 240, 240, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+#reserve .deta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* 字的顏色 */
+#reserve .deta h2 {
+    color: #1d201d;
+}
+
+#reserve .deta h3 {
+    color: #797474;
+}
+
+#reserve .deta h1,
+#reserve .deta h4 {
+    color: #3C4935;
+}
+
+/*  您好，林洛洛！  */
+#reserve .deta .bold {
+    font-size: 14px;
+    font-weight: 700;
+    color: #797474;
+    letter-spacing: 2px;
+}
+
+/*  您好，林洛洛！如需查看訂單資訊可至會員查看。 */
+#reserve p {
+    font-size: 14px;
+    color: #797474;
+    letter-spacing: 2px;
+    margin-top: 10px ;
+}
+
+/* 如需查看訂單資訊可至會員查看。 */
+#reserve .text{
+    display: flex;
+    font-size: 14px;
+    color: #797474;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* 會員 */
+#reserve .member {
+    display: block;
+    text-decoration: underline;
+}
+/* lolitama@gmail.com */
+#reserve .deta .eng {
+    font-weight: 700;
+    color: #797474;
+    letter-spacing: 2px;
+    font-family: 'Unna', serif;
+}

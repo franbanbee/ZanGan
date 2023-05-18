@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>報名課程成功</title>
+    <title>預約成功</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
@@ -56,119 +58,27 @@
         </nav>
     </div>
 
-    <!-- signup -->
-    <main id="signup0">
+    <!-- reserve 預約成功區 -->
+    <main id="reserve">
         <!-- 上面導覽列 -->
-        <nav>
+        <div class="nav">
             <h3>ENROLL IN</h3>
-            <h1>報名課程</h1>
-            <h4>您好，這裡僅供預約報名的服務。如需付款之類的，看你們要不要自己過來繳費呀。<br>
-                或是我們直接上門催繳(此步驟不會有任何的門受到損害)</h4>
-        </nav>
-        <!-- 整個區塊 -->
-        <div class="block1">
-            <!-- 左邊課程或活動下拉選單 -->
-            <div>
-                <!-- 小標題區 -->
-                <div class="item">
-                    <span class="box1">
-                        <h4>課程</h4>
-                        <hr>
-                    </span>
-                    <span class="box1">
-                        <h4>活動/工作坊</h4>
-                        <hr>
-                    </span>
-                </div>
-                <!-- 課程類別:-->
-                <label for="ccourse"></label>
-                <select name="ccourse" id="ccourse">
-                    <option value="">課程類別:</option>
-                    <option value="茶藝興趣A班">茶藝興趣A班</option>
-                    <!-- <option value="自由繪畫">自由繪畫</option>
-                    <option value="蘵感手作">蘵感手作</option>
-                    <option value="香水特製Lab">香水特製Lab</option>
-                    <option value="小點茶藝工坊">小點茶藝工坊</option> -->
-                </select>
-                <!-- 課堂名稱: -->
-                <label for="name"></label>
-                <select name="name" id="name">
-                    <option value="">課程名稱:</option>
-                    <option value="金工山林遊: 悠悠">金工山林遊: 悠悠</option>
-                    <!-- <option value="自由繪畫">自由繪畫</option>
-                    <option value="蘵感手作">蘵感手作</option>
-                    <option value="香水特製Lab">香水特製Lab</option>
-                    <option value="小點茶藝工坊">小點茶藝工坊</option> -->
-                </select>
-                <!-- 加入預約清單 -->
-                <div class="list">
-                    <h4>加入預約清單</h4>
-                    <a href="signup suc.html"><img src="img/index/index-news/arrow(白).svg" alt=""></a>
-                </div>
-            </div>
-            <!-- 垂直線 -->
-            <span class="vline">
-                <hr>
-            </span>
-            <!-- 右邊顯示選取課程或活動 -->
-            <div class="nav2">
-                <!-- 小標題區 -->
-                <div class="item">
-                    <span class="box1">
-                        <h4>已添加的課程/活動</h4>
-                        <hr>
-                    </span>
-                </div>
-                <!-- 右邊小區塊  -->
-                <!-- 茶藝興趣A班 -->
-                <div class="list3">
-                    <h2>茶藝興趣A班</h2>
-                    <h3>週五下午14:00-16:00，共6堂 <br>
-                        3/3、3/10、3/17、3/24、3/31、4/7</h3>
-                    <!-- 已添加課程內容區塊  -->
-                    <span class="box2">
-                        <div>
-                            <h4>$</h4>
-                            <h1>8000</h1>
-                        </div>
-                        <hr>
-                    </span>
-                </div>
-                <!-- 活動:金工山林遊: 悠悠 -->
-                <div class="list3 block2">
-                    <span class="act">
-                        <h3>活動</h3>
-                        <h1>4/13</h1>
-                        <h2>金工山林遊: 悠悠</h2>
-                    </span>
-                    <h3>下午14:00-16:00，共1堂</h3>
-                    <!-- 已添加課程內容區塊  -->
-                    <span class="box2">
-                        <div>
-                            <h4>$</h4>
-                            <h1>8000</h1>
-                        </div>
-                        <hr>
-                    </span>
-                </div>
-                <!-- 送出 -->
-               <button>
-                    <a href="cart.html"><h3>送出</h3></a>
-               </button>
-            </div>
+            <h1>預約成功</h1>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-    </main>
+        <!-- 資料核對區  -->
+        <nav>
+            <div class="deta">
+                <h2>資料核對</h2>
+                <p><span class="bold">您好，林洛洛！</span> <br>
+                    <div class="text">
+                        如需查看訂單資訊可至<span class="member"><a href="signup suc.html">會員</a></span>查看。</p>
+                    </div>
+                <h3>我們將寄簡章到您的信箱：
+                    <span class="eng">lolitama@gmail.com</span>
+                </h3>
+            </div>
+        </nav>
+        
 
     <!-- 8.footer -->
     <div id="footer">
@@ -238,6 +148,11 @@
             </ul>
         </div>
     </div>
+    <!-- jQuery Core 3.7.0原始碼,一定要放在最上面,先被執行 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- 自訂的js,一定要放在最下面,最後被執行 -->
+    <script src="script.js"></script>
 </body>
 
 </html>
