@@ -80,52 +80,17 @@
         </nav>
 
         <!-- popup 自動彈跳視窗 -->
-        <div id="popup">
-            <span class="close"><img src="img/reserve/close.svg" alt=""></span>
+        <button id="show"><h2>訂單</h2></button>
+        <dialog id="infoModal">
             <div>
-                
                 <h1> 已送出訂單!</h1>
                 <h3> 返回至首頁</h3>
                 <hr>
-                
             </div>
             <div class="circle"><img src="img/reserve/circle.svg" alt="雙圓圈"></div>
             <div class="logo"><img src="img/reserve/zg logo.svg" alt="底圖logo"></div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Modal 自動彈跳視窗
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog"> -->
-        <!-- Modal content-->
-        <!-- <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">手動設定教學標題</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>手動設定教學內文</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">好，下次進網頁繼續提醒我</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="cancel()"
-                            onkeypress="cancel()">夠了，不要再跳了</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+            <button id="close"><img src="img/reserve/close.svg" alt=""></button>
+        </dialog>
 
         <!-- footer -->
         <div id="footer">
@@ -198,6 +163,8 @@
         <!-- jQuery Core 3.7.0原始碼,一定要放在最上面,先被執行 -->
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <!-- z.js -->
+        <script src="popup.js"></script>
         <!-- 自訂的js,一定要放在最下面,最後被執行 -->
         <script src="script.js"></script>
 </body>

@@ -1497,9 +1497,10 @@ hr {
 }
 
 /* 茶藝上下間距 */
-#cart .space{
+#cart .space {
     /* margin: 30px auto; */
 }
+
 /* cart茶藝興趣A班  */
 #cart .tea h3 {
     margin: 0 80px;
@@ -1511,7 +1512,7 @@ hr {
 }
 
 /* cart $8000區塊 */
-#cart .money{
+#cart .money {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1626,33 +1627,33 @@ hr {
 }
 
 /* 4/13+下午14:00-16:00，共1堂 */
-#cart .act{
+#cart .act {
     margin-top: 15px;
 }
 
 /* 4/13 */
-#cart .act h1{
+#cart .act h1 {
     color: #5c5c5c;
 }
 
 /* 下午14:00-16:00，共1堂 */
-#cart .noon{
+#cart .noon {
     margin-left: -55px;
     margin-right: 90px;
 }
 
 /* total購物車總計 */
-#cart .total{
+#cart .total {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 50px auto ;
+    margin: 50px auto;
     width: 1000px;
 }
 
 /* 購物車總計NT$8000文字區塊 */
-#cart .total_money{
+#cart .total_money {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1661,28 +1662,29 @@ hr {
 
 /* 購物車總計間距 */
 #cart .total_money h2,
-#cart .total_money .nt{
+#cart .total_money .nt {
     margin: 0 40px;
 }
+
 /* short hr */
-#cart hr{
+#cart hr {
     width: 350px;
     height: 0;
 }
 
 /* NT$8000 */
-#cart .nt{
+#cart .nt {
     display: flex;
 }
 
 /* NT$ */
-#cart .nt h4{
+#cart .nt h4 {
     margin-top: 10px;
     margin-right: 10px;
 }
 
 /* 送出預約訂單 */
-#cart .sent{
+#cart .sent {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1701,26 +1703,25 @@ hr {
 #cart button h3 {
     color: #fff;
     margin: 0 auto;
-    
+
 }
 
 /* 上一個步驟 */
-#cart .more{
+#cart .more {
     margin-left: 100px;
 }
+
 /* 上一個步驟 Prev Step */
-#cart .more h3{
+#cart .more h3 {
     margin-left: 20px;
     margin-bottom: -10px;
 }
 
 /* reserve 預約成功區 */
-#reserve{
-
-}
+#reserve {}
 
 /* 上面導覽列 */
-#reserve .nav{
+#reserve .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1774,11 +1775,11 @@ hr {
     font-size: 14px;
     color: #797474;
     letter-spacing: 2px;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
 /* 如需查看訂單資訊可至會員查看。 */
-#reserve .text{
+#reserve .text {
     display: flex;
     font-size: 14px;
     color: #797474;
@@ -1792,6 +1793,7 @@ hr {
     text-decoration: underline;
     color: #797474;
 }
+
 /* lolitama@gmail.com */
 #reserve .deta .eng {
     font-weight: 700;
@@ -1801,7 +1803,7 @@ hr {
 }
 
 /* popup 自動彈跳視窗 */
-#popup{
+#popup {
     width: 480px;
     height: 260px;
     margin: 100px auto;
@@ -1815,19 +1817,19 @@ hr {
 
 /* 字的顏色 */
 #popup h1,
-#popup h3{
+#popup h3 {
     color: #797474;
 }
 
 /* close */
-#popup .close{
+#popup .close {
     display: flex;
-    margin: 10px 10px 10px 450px ;
+    margin: 10px 10px 10px 450px;
     /* border: solid 5px pink; */
 }
 
 /* 已送出訂單!返回至首頁 */
-#popup div{
+#popup div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1837,41 +1839,118 @@ hr {
 }
 
 /* short hr */
-#popup hr{
+#popup hr {
     border-color: #DACFB8;
     width: 80px;
     height: 0;
 }
 
 /* circle */
-#popup .circle{
+#popup .circle {
     position: absolute;
     top: -40px;
     left: 100px;
 }
 
 /* 底圖logo */
-#popup .logo{
+#popup .logo {
     position: absolute;
     top: -70px;
     left: 15px;
 }
 
 
-/* cp */
-/* Modal自動彈跳視窗 */
-#myModal{
+
+
+/* infoModal 自動彈跳視窗 */
+#infoModal {
     width: 480px;
     height: 260px;
+    margin: 100px auto;
     /* display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; */
-    margin: 0 auto;
-    border: solid 3px #797474;
+    /* border: pink solid 3px; */
+    border-color: #fff;
+    /* box-shadow: 3px 4px 4px rgba(0,0,0,0.25); */
+    -webkit-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* 字的顏色 */
+#infoModal h1,
+#infoModal h3 {
+    color: #797474;
 }
 
 /* close */
-#myModal .close{
-    margin-right: 10px;
+#infoModal #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    /* display: flex; */
+    /* margin: 10px 10px 10px 450px ; */
     /* border: solid 5px pink; */
+}
+
+/* 已送出訂單!返回至首頁 */
+#infoModal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* border: solid 5px pink; */
+}
+
+/* short hr */
+#infoModal hr {
+    border-color: #DACFB8;
+    width: 80px;
+    height: 0;
+}
+
+/* circle */
+#infoModal .circle {
+    position: absolute;
+    top: -50px;
+    left: 115px;
+}
+
+/* 底圖logo */
+#infoModal .logo {
+    position: absolute;
+    top: -70px;
+    left: 15px;
+}
+
+/* btn show 訂單 */
+#show {
+    background-color: rgba(155, 130, 86, .74);
+    border-color: #f0f0f0;
+    display: flex;
+    margin: 80px auto;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    /* border: solid 5px salmon; */
+}
+
+/* show:hover */
+#show:hover {
+    background-color: #3C4935;
+    color: #F0F0F0;
+}
+
+/* 訂單文字 */
+#show h2{
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    /* border: solid 5px salmon; */
 }
