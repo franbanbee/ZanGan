@@ -309,8 +309,6 @@ hr {
     top: 0;
     left: 0;
     z-index: 999;
-    width: 100%;
-    position: relative;
     /* border: solid 3px pink; */
 }
 
@@ -371,7 +369,7 @@ hr {
     /* margin: 0 150px 0 40px; */
     position: absolute;
     top: 12px;
-    right: 570px;
+    right: 560px;
 }
 
 /* icon */
@@ -466,7 +464,7 @@ hr {
 /* 3.about */
 #about {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,8 +487,9 @@ hr {
 
 /* about文字區塊 */
 .about_block {
-    width: 80%;
-    height: 80vh;
+    width: 70%;
+    height: 60vh;
+    /* border: solid 5px sandybrown; */
 }
 
 /* 對齊文字位置 */
@@ -510,11 +509,11 @@ hr {
     justify-content: flex-end;
 }
 
-/* t6 */
 /* 團體照片 */
 .group img {
     height: 100vh;
     width: 480px;
+    /* padding-left: 50px; */
 }
 
 
@@ -565,7 +564,7 @@ hr {
 
 /* 底圖大logo */
 .bg_logo {
-    margin-top: 180px;
+    margin-top: 140px;
     position: absolute;
     z-index: 99;
 }
