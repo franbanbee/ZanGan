@@ -158,13 +158,14 @@ table {
 
 /* 全部字型 */
 * {
-    font-family: 'Noto Serif TC', serif, 'Noto Sans TC', sans-serif, 'Unna', serif, 'Cinzel', serif;
+    /* font-family: 'Noto Serif TC', serif, 'Unna', serif, 'Cinzel', serif; */
 }
 
 body {
     clear: both;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Noto Serif TC', serif, 'Unna', serif, 'Cinzel', serif;
 }
 
 /* .title {
@@ -717,7 +718,29 @@ hr {
     flex-direction: column;
     justify-content: center;
     /* position: relative; */
-    /* margin-top: 100px; */
+    /* border: solid 5px rgb(219, 169, 132) */
+}
+
+/* 標題區 */
+#teachers .nav {
+    margin: 50px 0 0 100px ;
+    /* display: flex; */
+    /* flex-direction: column; */
+   /* margin-left: 100px;
+    margin-top: 50px; */
+    /* position: absolute; */
+    /* left: 110px; */
+    /* top: 0; */
+    /* border: solid 5px rgb(247, 98, 123); */
+}
+
+/* 五個圖片區域 */
+#teachers ul {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    margin: 90px 5px 0 100px ;
+    /* border: solid 5px pink; */
 }
 
 /* 整個圖片區域 */
@@ -730,10 +753,18 @@ hr {
 #teachers h2 {
     color: #fff;
     font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
     writing-mode: vertical-lr;
-    position: absolute;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+    /* position: absolute;
     left: 15px;
-    top: 10px;
+    top: 10px; */
+    /* padding: 5px; */
+    margin: 5px 5px 5px 10px;
+    position: absolute;
+    z-index: 99;
+    /* font-family: 'Unna', serif; */
 }
 
 #teachers h4 {
@@ -742,86 +773,14 @@ hr {
     writing-mode: vertical-lr;
 }
 
-/* 圖片相對位置 */
+/*  每一區塊圖片 */
 .teachers_box {
     position: relative;
-    width: 230px;
+    width: 205px;
     height: 350px;
     display: flex;
-}
-
-/* 綠色方塊區 */
-.teachers_good {
-    background-color: #3C4935;
-    opacity: 0.85;
-    color: #fff;
-    width: 70px;
-    height: 300px;
-    letter-spacing: 0.045em;
-    position: absolute;
-    right: 15px;
-    bottom: -10px;
-    z-index: 99;
-}
-
-/* 師資學歷 */
-.teachers_college {
-    position: absolute;
-    left: 15px;
-    top: 10px;
-    font-size: 14px;
-    letter-spacing: 5px;
-    font-weight: lighter;
-}
-
-/* 師資擅長 */
-.teachers_best {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    font-size: 14px;
-    letter-spacing: 5px;
-    font-weight: lighter;
-}
-
-/* 五個圖片區域 */
-#teachers ul {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 130px;
-    margin-right: 10px;
-    border: solid 5px pink;
-}
-
-.hr {
-    border: solid 1px #797474;
-    width: 700px;
-}
-
-/* 標題區 */
-#teachers .nav {
-    display: flex;
-    flex-direction: column;
-   /* margin-left: 100px;
-    margin-top: 50px; */
-    /* position: absolute; */
-    /* left: 110px; */
-    /* top: 0; */
-    /* border: solid 5px pink; */
-}
-
-/* 整個區塊 */
-.a {
-    position: relative;
-}
-
-/* 每一個區塊大小 */
-#teachers li{
-    width: 212px;
-    height: 300px;
-    margin: 5px;
-    border: solid 5px pink;
+    margin-right: 4px;
+    /* border:  solid 5px rgb(138, 31, 49); */
 }
 
 /* 講師照片 */
@@ -829,11 +788,84 @@ hr {
     display: block;
     width: 160px;
     height: 300px;
-    border: solid 5px rgb(184, 77, 95);
+    /* border: solid 5px rgb(184, 77, 95); */
+}
+
+/* Wu講師照片 */
+ #teachers .pos{
+    margin: -5px 0 0 0;
+    /* border:  solid 5px rgb(138, 31, 49);  */
+ }         
+/* 綠色方塊區 */
+.teachers_good {
+    background-color: #3C4935;
+    opacity: 0.85;
+    color: #fff;
+    width: 50px;
+    height: 265px;
+    /* width: 70px; */
+    /* height: 300px; */
+    /* letter-spacing: 0.045em; */
+    margin:60px 45px 0 -25px ;
+    z-index: 99;
+    display: flex;
+    /* border: solid 5px rgb(184, 77, 95); */
+}
+
+/* 師資學歷 */
+.teachers_college {
+    flex: 1;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    font-weight: lighter;
+    margin: 5px 5px;
+    width: 22px;
+    height: 276px;
+    /* border: solid 3px pink; */
+}
+
+/* 師資擅長 */
+.teachers_best {
+    flex: 1;
+    letter-spacing: 3.5px;
+    font-weight: lighter;
+    margin: 23px 5px 5px 5px;
+    width: 24px;
+    height: 276px;
+    /* border: solid 3px rgb(236, 72, 99); */
+}
+
+/* Liu 擅長另外排版 */
+#teachers .another{
+    margin: 75px 5px 5px 5px;
+    /* border: solid 3px rgb(163, 215, 248); */
+}
+
+/* Chen 擅長另外排版 */
+.another_chen{
+    margin: 5px 5px 5px 5px;
+    /* border: solid 3px rgb(163, 215, 248); */
+}
+
+/* Hang 擅長另外排版 */
+.another_hang{
+    margin: 58px 5px 5px 5px;
+    /* border: solid 3px rgb(163, 215, 248); */
 }
 
 
+.hr {
+    border: solid 1px #797474;
+    width: 600px;
+}
 
+/* 每一個區塊大小 */
+#teachers li{
+    /* width: 212px; */
+    /* height: 300px; */
+    /* margin: 5px; */
+    /* border: solid 5px pink; */
+}
 
 /* 6.news  */
 #news {
