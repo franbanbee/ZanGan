@@ -1,12 +1,10 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Noto+Serif+TC&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&family=Unna:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Foldit&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&family=Unna:ital@1&display=swap');
 /*UTF-8 一定要寫在第一行 */
 /* 都選400的 */
 /* 第二行思源宋體 */
-/* 第三行用思源黑體他會強制預設變成黑體 跳過宋體 */
 /* 第四行Unna 用Regular 400 Italic */
 /* 第五行用Cinzel */
 /* Ariel沒有google font */
@@ -157,19 +155,20 @@ table {
 /* ----------------------------------------共用---------------------------------------- */
 
 /* 全部字型 */
-* {
+/* * {
     font-family: 'Noto Serif TC', serif, 'Noto Sans TC', sans-serif, 'Unna', serif, 'Cinzel', serif;
-}
+} */
 
 body {
     clear: both;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Noto Serif TC', serif, 'Unna', serif, 'Cinzel', serif;
 }
 
-.title {
+/* .title {
     font-size: 16px;
-}
+} */
 
 hr {
     color: #797474;
@@ -218,10 +217,11 @@ h4 {
 }
 
 /* 1.1 1.2topbar white green 精簡+100%  */
-#topbar,#topbarw{
+#topbar,
+#topbarw {
     background-color: #3C4935;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 5px;
@@ -230,51 +230,111 @@ h4 {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 999;
-    width: 100%;
+    z-index: 9999;
+    /* border: solid 3px pink; */
 }
-#topbarw{
-    background-color: rgba(255,255,255,0.05);
-    
+
+#topbarw {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* 各別區域 */
-#topbar ul ,#topbarw ul{
+#topbar ul,
+#topbarw ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right:45px ;
 }
 
 /* 單個 */
-#topbar li ,#topbarw li{
+#topbar li,
+#topbarw li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
-    /* border: solid 3px pink; */
-    
+    margin: 0 15px;
+    /* border: solid 5px pink; */
 }
 
 /* 單個文字 */
-#topbar h3,#topbarw h3{
+#topbar h3,
+#topbarw h3 {
     color: #fff;
     font-size: 14px;
     letter-spacing: 2px;
-    margin: 0 5px;
-    /* border: solid 3px pink; */
+    /* margin: 0 5px; */
 }
 
 /* 快速報名 */
-.signup{
+#topbar .signup,
+#topbarw .signup {
     display: flex;
-    background-color: rgba(155,130,86,.74);
+    background-color: rgba(155, 130, 86, .74);
     padding: 5px;
-    margin: 0 20px;
+    margin: 0 35px 0 50px;
     font-family: "Noto Serif TC";
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    /* border: solid 5px salmon; */
 }
 
-/* 2.news */
-/* 和單一分頁各一個 */
+/* 箭頭圖案 */
+#topbar .space,
+#topbarw .space{
+    margin-left: 20px;
+    /* border: solid 5px salmon; */
+}
+
+/* 登入區 */
+#topbar .login_box,
+#topbarw .login_box{
+    margin-right: 25px;
+}
+
+/* 登入圖案 */
+#topbar .login,
+#topbarw .login {
+    /* display: block;
+    text-decoration: none; */
+    margin-right: 5px;
+    /* border: solid 5px salmon; */
+}
+
+/* logo */
+#topbar .logo,
+#topbarw .logo{
+    /* position: absolute;
+    top: 12px;
+    right: 560px; */
+    margin: 0 50px 0 90px;
+}
+
+/* icon */
+#topbar .icon,
+#topbarw .icon{
+    /* position: absolute; */
+    /* right: -32px; */
+    /* top: 15px; */
+    margin: 0 0 0 80px;
+}
+
+/* 購物車圖案 */
+#topbar .carticon,
+#topbarw .carticon{
+    margin-left: -10px;
+}
+/* menu */
+#topbar .menu,
+#topbarw .menu{
+    /* position: absolute;
+    left: 95px;
+    top: 25px; */
+    margin: 0 0 0 80px;
+}
+
+/* 2.news  news_content*/
 #news {
     /* display: flex; */
     /* justify-content: space-between; */
@@ -386,10 +446,13 @@ h4 {
     margin: 10 0px;
     text-align: start;
     width: 700px;
+    /* border: solid 5px red; */
 }
 
 .news_hr {
     padding: 5px;
+    width: 700px;
+    border-color: #797474;
     /* margin: 5 5 0 5px; */
 }
 
@@ -965,54 +1028,40 @@ p {
     width: 1030px;
 }
 
-/* footer */
+/* 8.footer */
 #footer {
     background-color: #3C4935;
     color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 1px; */
-    margin-top: 250px;
-    /* border: solid 5px red; */
-
+    margin-top: 400px;
 }
 
 .footer_ul {
     display: flex;
-    /* justify-content: space-around;
-    align-items: center; */
-    /* border: solid 5px rgb(142, 221, 211); */
+    margin-left: 140px;
 }
 
 .footer_li {
     position: relative;
     width: 350px;
     height: 300px;
-    /* border: solid 5px rgb(206, 235, 171); */
-    /* t2 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin:15px 20px 0 30px;
+    /* margin-left: 50px; */
+    /* border: solid 5px salmon; */
 }
 
 /* 上面列 */
-/* logo/access/contact */
 .footer_nav {
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    /* border: solid 5px red; */
     margin: 30px 0;
 }
 
 /* 下面列 */
-/* copyright/icon_social media/QA */
 .footer_main {
-    /* position: absolute;
-    left: 0;
-    bottom: 0; */
-    /* border: solid 5px rgb(153, 191, 212); */
     margin: 30px 0;
 }
 
@@ -1024,7 +1073,6 @@ p {
 
 #footer h1 {
     color: #fff;
-    ;
     font-size: 30px;
     font-family: 'Unna', serif;
 
