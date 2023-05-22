@@ -524,6 +524,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
     /* border: solid 5px rgb(228, 147, 147); */
 }
 
