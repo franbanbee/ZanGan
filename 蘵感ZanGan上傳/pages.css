@@ -124,7 +124,7 @@ body {
     line-height: 1;
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
-        "蘋方-繁", "PingFang TC", "Noto Sans TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
 
 ol,
@@ -574,14 +574,16 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 100vh; */
+    margin-bottom: -350px;
     /* border: #6dcbb5 5px solid; */
 }
 
 .all_section_topbar {
-    width: 1000px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+    /* width: 1000px; */
+    /* height: auto; */
+    /* display: flex; */
+    /* justify-content: space-between; */
     /* border: #f00e0e 5px solid; */
 }
 
@@ -593,39 +595,40 @@ h4 {
     background-color: rgba(240,240,240,.3);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    margin: 40px 0;
-    width: 1030px;
-    /* height: 800px; */
+    margin: 40px 10px;
+    width: 1020px;
     /* border: #f17d0a 5px solid; */
 }
 
 /* 日期 */
 .date {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 400;
     color: #656565;
     opacity: 0.5;
-    /* padding: 0 50px; */
-    margin: 30px 20px;
+    letter-spacing: 1px;
+    margin: 30px 10px 30px 20px;
+    font-family: 'Unna', serif;
+    /* border: #cf5a85 5px solid; */
+}
+
+/* 6.16 */
+#news_page .day{
+    letter-spacing: 5px;
+    margin-bottom: -5px ;
     /* border: #cf5a85 5px solid; */
 }
 
 /* 中間右邊內文區塊 */
 .news_page_section,
 .media_page_section {
-    /* background-color: #F0F0F0; */
     color: #1D201D;
-    width: 900px;
-    /* padding: 0 10px; */
-    /* margin: 30px 0; */
-    margin: 30px 0;
+    width: 750px;
+    margin: 30px 5px;
     /* border: #62e4f5 5px solid; */
 }
 
 /* news更多詳情+media瞭解課程 */
-
-/* #news_page a, */
 #news_page .more a,
 #media_page a {
     display: flex;
@@ -650,7 +653,6 @@ h4 {
     font-size: 14px;
     color: #1D201D;
     letter-spacing: 1px;
-    /* line-height: .8rem; */
     padding: 10px 0;
     margin: 10px 0;
     text-align: start;
@@ -672,11 +674,16 @@ h4 {
 
 /*底層logo */
 .news_page_logo {
-    position: absolute;
-    right: -5px;
-    bottom: 30px;
     padding: 0 5px;
-    /* margin: 0 0 0 30px; */
+    /* border: #7a15d3 5px solid; */
+}
+
+.news_page_logo img{
+    display: block;
+    width: 75px;
+    height: 400px;
+    margin-left: 760px;
+    margin-top: -400px;
     /* border: #7a15d3 5px solid; */
 }
 
@@ -709,13 +716,22 @@ h4 {
     justify-content: center;
     align-items: center;
     /* border: solid 1px blue; */
-   
+}
 
+/*  查看上一則+ 查看下一則*/
+.news_page_arrow h3{
+    margin-bottom: -10px;
+    margin-right: -15px;
+}
+
+/* 查看下一則 */
+.next h3{
+    margin-right:10px ;
+    /* border: solid 5px red; */
 }
 
 /* -------------------------media-------------------- */
 /* 共用區 */
-
 
 /* 2-1media */
 /* 首頁和單一分頁各一個 */
@@ -742,21 +758,15 @@ main {
     justify-content: center;
 }
 
-/* +++0511 */
 /* 選單區 */
 #media li {
     padding: 5px 5px;
     margin: 0 5px;
-    /* display: flex;
-    text-align: center;
-    align-items: center; */
-    /* background-color: #E7E4DB; */
 }
 
 #media li a:hover{
     background-color: #3C4935;
     color: #fff;
-    /* +++ */
     display: block;
     text-decoration: none;
     width: 180px;
@@ -783,32 +793,10 @@ main {
     margin-bottom: 40px;
 }
 
-button {
-    /* width: 180px;
-    height: 40px; */
-    /* margin: 5px 10px; */
-    /* border: solid 2px #F0F0F0;
-    border-radius: 5px;
-    background-color: #3C4935; */
-  
-    /* border: solid 5px red;  */
-}
-
-/* 按鈕文字 */
-/* button a {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    color: #fff;
-    border: solid 5px red; 
-} */
-
 /* 圖片 */
 #media figure img {
     width: 380px;
     height: 180px;
-    /* object-fit:cover; */
-    /* width: 100%;  */
     /* border: solid 5px rgb(241, 156, 156); */
 }
 
@@ -820,15 +808,9 @@ button {
     color: #1D201D;
     letter-spacing: 2px;
     /* border: solid 5px rgb(156, 234, 241); */
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end; */
     position: absolute;
     right: 0;
     bottom: 0;
-
 }
 
 /* 右邊文字內容區塊 */
@@ -836,7 +818,6 @@ button {
     position: relative;
     height: 180px;
     padding: 0 20px;
-    /* margin: 0 0 50px 0; */
     /* border: solid 3px rgb(197, 230, 170); */
 }
 
@@ -857,10 +838,8 @@ button {
 
 p {
     padding: 1px 0;
-    /* margin: 5px 0; */
     margin-bottom: 5px;
     text-align: start;
-    /* line-height: 5px; */
     /* border: solid 5px rgb(197, 230, 170); */
 }
 
@@ -871,8 +850,6 @@ p {
 #media h3 {
     color: #5C5C5C;
 }
-
-
 
 /*2-2 media_page */
 /* 分頁 */

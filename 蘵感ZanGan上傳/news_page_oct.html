@@ -6,39 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow" />
-    <title>【課程快訊】10月特別推出「DIY皮革工藝」快閃課程，不可錯過！</title>
+    <title>[課程快訊]10月特別推出「DIY皮革工藝」快閃課程，不可錯過！</title>
     <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="breadcrumb.css">
     <script src="script.js"></script>
 
 </head>
 
 <body>
-    <!-- 1.2topbar green 精簡+100%-->
+    <!-- topbar green 精簡+100%-->
     <div id="topbar">
         <nav>
             <ul class="menu">
-                <ul class="menu">
-                    <li>
-                        <a href="about.html">
-                            <h3>關於蘵感</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="news.html">
-                            <h3>最新消息</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="course.html">
-                            <h3>課程介紹</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="media.html">
-                            <h3>蘵感文章</h3>
-                        </a>
-                    </li>
-                </ul>
+                <li><a href="about.html">
+                        <h3>關於蘵感</h3>
+                    </a></li>
+                <li><a href="news.html">
+                        <h3>最新消息</h3>
+                    </a></li>
+                <li><a href="course.html">
+                        <h3>課程介紹</h3>
+                    </a></li>
+                <li><a href="media.html">
+                        <h3>蘵感文章</h3>
+                    </a></li>
             </ul>
         </nav>
         <h1 class="logo">
@@ -49,16 +40,21 @@
         <nav>
             <ul class="icon">
                 <li class="signup">
-                    <a href="signup.html"><h3>快速報名</h3></a>
-                    <img src="img/index/index-topbar/立即報名（白）.svg" alt="">
+                    <a href="signup.html">
+                        <h3>快速報名</h3>
+                    </a>
+                    <span class="space"><img src="img/index/index-topbar/立即報名（白）.svg" alt=""></span>
                 </li>
-                <li>
-                    <span><img src="img/index/index-topbar/user.svg" width="20" height="20" alt="登入"></span>
-                    <span><a href="login.html"><h3>登入</h3></a></span>
+                <li class="login_box">
+                    <span class="login"><img src="img/index/index-topbar/user.svg" width="20" height="20"
+                            alt="登入"></span>
+                    <span><a href="login.html">
+                            <h3>登入</h3>
+                        </a></span>
                 </li>
                 <li>
                     <a href="cart.html">
-                        <img src="img/index/index-topbar/cart.svg" alt="購物車">
+                        <span class="carticon"><img src="img/index/index-topbar/cart.svg" alt="購物車"></span>
                     </a>
                 </li>
             </ul>
@@ -69,8 +65,12 @@
     <div id="news_page">
         <div class="all_section">
             <!-- 麵包屑 -->
-            <div>
-                麵包屑
+            <div class="wrap">
+                <ol class="breadcrumb">
+                    <li href="#"><a class="news_box0">首頁</a></li>
+                    <li href="#"><a class="news_box">最新消息</a></li>
+                    <li href="#"><a class="news_box2">[課程快訊]10月特別推出「DIY皮革工藝」快閃課程，不可錯過！</a></li>
+                </ol>
             </div>
             <!-- 內容區塊 -->
             <div class="news_page_main">
@@ -78,13 +78,14 @@
                 <div class="news_page_block">
                     <!-- 日期 -->
                     <div class="date">
-                        <p> 6.16 <br> 2023 </p>
+                        <p class="day"> 6.16</p>
+                        <p> 2023 </p>
                     </div>
                     <!-- 右邊區塊 -->
                     <div class="news_page_section">
                         <!-- 標題 -->
                         <div class="news_page_title">
-                            <h1>課程快訊】10月特別推出「DIY皮革工藝」快閃課程，不可錯過！</h1>
+                            <h1>[課程快訊]10月特別推出「DIY皮革工藝」快閃課程，不可錯過！</h1>
                         </div>
                         <!-- 圖片 -->
                         <div class="news_page_img">
@@ -92,7 +93,7 @@
                         </div>
                         <!-- 文字 -->
                         <div class="news_page_text">
-                            <p>親愛的同學，質感美學工作室推出最新的聚會活動——美學下午茶！</p>
+                            <p>親愛的同學，蘵感美學工作室推出最新的聚會活動——美學下午茶！</p>
                             <p> 想要在舒適的環境下品嘗美味點心，並且結交志同道合的朋友嗎？快來參加我們的活動吧！活動當天，您可以一邊 <br> 
                                 品嘗各種美味的小點心，一邊聊聊手作的經驗和技巧，也可以與其他同學交流美學方面的想法和創意。我們的導師<br>
                                 會為您提供一些手作材料，讓您可以在下午茶時間完成一個小作品。</p>
@@ -122,7 +123,7 @@
                     </div>
 
                     <!-- 查看下一則 -->
-                    <div class="news_page_arrow">
+                    <div class="news_page_arrow next">
                         <h3><a href="news_page_flower.html">查看下一則</a></h3>
                         <img src="img/index/index-about/arrow(黑).svg" alt="">
                     </div>

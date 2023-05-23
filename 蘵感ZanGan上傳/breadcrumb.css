@@ -11,7 +11,7 @@ body{
 
 /* 整列麵包屑 */
 .wrap{
-    margin: 20px 13px;
+    margin: 20px 23px;
     /* padding: 10px 0; */
     /* background-color: #3c6382; */
     /* box-shadow: 0px 5px 5px rgba(51, 84, 110, 0.6) */
@@ -37,19 +37,19 @@ body{
 
 /* 首頁 */
 .news_box0{
-    margin: 1px 15px 1px 0;
+    margin: 1px 5px 1px -5px;
 }
 /* 最新消息 */
 .news_box{
     padding: 0 10px;
-    margin: -15px 15px;
+    margin: -15px -5px -15px 5px;
     /* border: solid 2px rgb(231, 187, 187); */
 }
 
 /* [活動快訊] 11月美學下午茶報名開始了～ */
 .news_box2{
     padding: 0;
-    margin: -15px 15px;
+    margin: -15px 5px -15px -5px;
     /* border: solid 2px rgb(221, 81, 81); */
 }
 
@@ -59,12 +59,12 @@ body{
 .breadcrumb li + li:before{
     content: '>';
     color: #1d1d1d;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .breadcrumb li:last-child a,
 .breadcrumb a:hover{
     color: #1d1d1d;
     border-radius: 35px;
-    background-color: rgba(240,240,240,0.3);
-    padding: 0px 30px;
+    /* background-color: rgba(240,240,240,0.3); */
+    padding: 0 20px;
 }
