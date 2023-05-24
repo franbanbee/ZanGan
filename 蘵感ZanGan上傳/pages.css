@@ -630,7 +630,7 @@ h4 {
 
 /* news更多詳情+media瞭解課程 */
 #news_page .more a,
-#media_page a {
+#media_page .subnav  a {
     display: flex;
     text-decoration: none;
     background-color: #3C4935;
@@ -759,12 +759,12 @@ main {
 }
 
 /* 選單區 */
-#media li {
+#media .subnav {
     padding: 5px 5px;
     margin: 0 5px;
 }
 
-#media li a:hover{
+#media .subnav a:hover{
     background-color: #3C4935;
     color: #fff;
     display: block;
@@ -780,7 +780,7 @@ main {
 }
 
 /* 單一按鈕 */
-#media li a {
+#media .subnav a {
     display: block;
     text-decoration: none;
     width: 180px;
