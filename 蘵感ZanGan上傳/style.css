@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Noto+Serif+TC&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&family=Unna:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Foldit&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&family=Unna:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 /*UTF-8 一定要寫在第一行 */
 /* 都選400的 */
 /* 第二行思源宋體 */
@@ -124,7 +125,7 @@ body {
     line-height: 1;
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
-        "蘋方-繁", "PingFang TC", "Noto Sans TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
 
 ol,
@@ -321,7 +322,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:45px ;
+    margin-right: 45px;
 }
 
 /* 單個 */
@@ -359,14 +360,14 @@ hr {
 
 /* 箭頭圖案 */
 #topbar .space,
-#topbarw .space{
+#topbarw .space {
     margin-left: 20px;
     /* border: solid 5px salmon; */
 }
 
 /* 登入區 */
 #topbar .login_box,
-#topbarw .login_box{
+#topbarw .login_box {
     margin-right: 25px;
 }
 
@@ -381,33 +382,35 @@ hr {
 
 /* logo */
 #topbar .logo,
-#topbarw .logo{
-    /* margin: 0 150px 0 40px; */
-    position: absolute;
+#topbarw .logo {
+    /* position: absolute;
     top: 12px;
-    right: 560px;
+    right: 560px; */
+    margin: 0 50px 0 90px;
 }
 
 /* icon */
 #topbar .icon,
-#topbarw .icon{
-    position: absolute;
-    /* right: -15px; */
-    right: -32px;
-    top: 15px;
+#topbarw .icon {
+    /* position: absolute; */
+    /* right: -32px; */
+    /* top: 15px; */
+    margin: 0 0 0 80px;
 }
 
 /* 購物車圖案 */
 #topbar .carticon,
-#topbarw .carticon{
+#topbarw .carticon {
     margin-left: -10px;
 }
+
 /* menu */
 #topbar .menu,
-#topbarw .menu{
-    position: absolute;
+#topbarw .menu {
+    /* position: absolute;
     left: 95px;
-    top: 25px;
+    top: 25px; */
+    margin: 0 0 0 80px;
 }
 
 /* 2.banner */
@@ -472,14 +475,14 @@ hr {
 #banner h2 {
     font-size: 38px;
     padding: 20px 0;
-    text-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.25);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 #banner h4 {
     margin: 10px;
     font-size: 34px;
     color: #fff;
-    text-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.25);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 #banner h3 {
@@ -487,9 +490,10 @@ hr {
 }
 
 /* hover */
-#banner .more img:hover{
+#banner .more img:hover {
     background-image: url(img/index/index-news/arrow\(黑\).svg);
 }
+
 /* 3.about */
 #about {
     position: relative;
@@ -556,7 +560,7 @@ hr {
 }
 
 /* 成為 */
-.about_block h1{
+.about_block h1 {
     font-size: 34px;
     font-weight: 600;
     color: #1D201D;
@@ -566,7 +570,7 @@ hr {
 }
 
 /* /ABOUT標題 */
-.about_block h3{
+.about_block h3 {
     font-family: 'Unna', serif;
     font-size: 14px;
     font-weight: lighter;
@@ -708,16 +712,17 @@ hr {
 /* bg_logo底圖logo */
 .bglogo {
     position: absolute;
-    top:550px;
+    top: 550px;
     right: 105px;
 }
 
 /* logo */
-.bglogo img{
-    
+.bglogo img {
+
     width: 150px;
     height: 200px;
 }
+
 /* 5.teachers */
 #teachers {
     color: #1d201d;
@@ -731,7 +736,7 @@ hr {
 
 /* 標題區 */
 #teachers .nav {
-    margin: 50px 0 0 100px ;
+    margin: 50px 0 0 105px;
     /* border: solid 5px rgb(247, 98, 123); */
 }
 
@@ -740,7 +745,7 @@ hr {
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-    margin: 50px 5px 0 100px ;
+    margin: 50px 5px 0 100px;
     /* border: solid 5px pink; */
 }
 
@@ -751,7 +756,7 @@ hr {
     font-weight: 400;
     letter-spacing: 2px;
     writing-mode: vertical-lr;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
     margin: 3px 5px 5px 10px;
     position: absolute;
     z-index: 99;
@@ -777,7 +782,7 @@ hr {
 }
 
 /* 講師照片 */
-#teachers .people img{
+#teachers .people img {
     display: block;
     width: 160px;
     height: 300px;
@@ -785,10 +790,11 @@ hr {
 }
 
 /* Wu講師照片 */
- #teachers .pos{
+#teachers .pos {
     margin: -5px 0 0 0;
     /* border:  solid 5px rgb(138, 31, 49);  */
- }         
+}
+
 /* 綠色方塊區 */
 .teachers_good {
     background-color: #3C4935;
@@ -796,7 +802,7 @@ hr {
     color: #fff;
     width: 50px;
     height: 265px;
-    margin:60px 45px 0 -25px ;
+    margin: 60px 45px 0 -25px;
     z-index: 99;
     display: flex;
     /* border: solid 5px rgb(184, 77, 95); */
@@ -826,19 +832,19 @@ hr {
 }
 
 /* Liu 擅長另外排版 */
-#teachers .another{
+#teachers .another {
     margin: 75px 5px 5px 5px;
     /* border: solid 3px rgb(163, 215, 248); */
 }
 
 /* Chen 擅長另外排版 */
-.another_chen{
+.another_chen {
     margin: 5px 5px 5px 5px;
     /* border: solid 3px rgb(163, 215, 248); */
 }
 
 /* Hang 擅長另外排版 */
-.another_hang{
+.another_hang {
     margin: 58px 5px 5px 5px;
     /* border: solid 3px rgb(163, 215, 248); */
 }
@@ -883,7 +889,8 @@ hr {
 #news .more {
     margin: 25px 10px 0 0;
 }
-#news .more a{
+
+#news .more a {
     margin-bottom: -5px;
     /* border: solid 3px rgb(236, 179, 226); */
 }
@@ -932,8 +939,22 @@ hr {
     height: 100vh;
 }
 
+/* MEDIA */
+#media .nav h3 {
+    /* color: #1D201D; */
+    /* text-align: center; */
+    font-family: 'Unna', serif;
+    font-size: 14px;
+}
+
+/* 2023.1.16 */
+#media .media_date {
+    font-family: 'Unna', serif;
+    font-size: 14px;
+}
+
 /* 每一張圖片 */
-#media .img img{
+#media .img img {
     /* width: 355px; */
     /* height: 150px; */
     width: 315px;
@@ -944,7 +965,7 @@ hr {
 }
 
 /* 【課程快訊】手作花藝課程邀請網紅講師Lori分<br> 享插花技巧，快來一起學習吧！ */
-#media h2{
+#media h2 {
     letter-spacing: 1px;
     line-height: 23px;
     font-weight: 700;
@@ -955,9 +976,9 @@ hr {
 }
 
 /* 您是否曾經想過要自己製作一束美麗的花束，但卻不知道該如何下手呢？質感工作室特別邀請到插花網... */
-#media h3{
+#media h3 {
     letter-spacing: 1px;
-    line-height: 21px; 
+    line-height: 21px;
     font-size: 12px;
     /* margin: 10px 0; */
 }
@@ -973,7 +994,7 @@ hr {
 }
 
 /* logo */
-#media .logobg{
+#media .logobg {
     width: 500px;
     height: 100px;
     margin-left: -10px;
@@ -1010,12 +1031,18 @@ hr {
 }
 
 /* 閱讀更多 */
-#media .more{
-    margin-top: 10px;
+#media .more {
+    margin-top: 5px;
 }
-#media .more a{
-    margin-bottom: -5px;
+
+#media .more a {
+    margin-bottom: -16px;
     /* border: solid 5px salmon; */
+}
+
+#media .more h3 {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* 8.footer */
@@ -1040,7 +1067,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:15px 20px 0 30px;
+    margin: 15px 20px 0 30px;
     /* margin-left: 50px; */
     /* border: solid 5px salmon; */
 }
@@ -1096,6 +1123,7 @@ hr {
 
 /* signup0課程報名 */
 #signup0 {
+    /* width: 100%; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1111,6 +1139,7 @@ hr {
     align-items: center;
     position: relative;
     height: 40vh;
+    margin: 0 auto;
     /* border: solid 1px salmon;  */
 }
 
@@ -1126,7 +1155,7 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: rgba(240, 240, 240, 0.3);
-    width: 80%;
+    width: 82%;
     height: 20vh;
     margin: 20px;
     /* border: solid 5px salmon; */
@@ -1140,7 +1169,8 @@ hr {
 }
 
 /*  已添加的課程/活動*/
-#signup0 .box1 {
+#signup0 .add {
+    /* margin-bottom: 170px; */
     /* border: solid 5px salmon; */
 }
 
@@ -1153,14 +1183,25 @@ hr {
     /* border: solid 5px salmon; */
 }
 
+#signup0 .box1 hr:hover{
+    height: 2.5px;
+    background-color: #3C4935;
+}
+
 /* 課程或活動/工作坊字體顏色+hr顏色 */
 #signup0 span h4,
-#signup0 span hr,
+#signup0 .box1 hr,
 #signup0 h2 {
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
     /* border: solid 3px pink; */
+}
+
+/* 分格線 */
+#signup0 .box1 hr{
+height: 2.5px;
+background-color: #DACFB8;
 }
 
 /* 下拉選單 */
@@ -1204,7 +1245,8 @@ hr {
 
 /* 右邊顯示選取課程或活動 */
 #signup0 .nav2 {
-    /* border: solid 5px salmon;  */
+    margin-bottom: 125px;
+    /* border: solid 5px rgb(193, 167, 164);  */
 }
 
 /* 右邊小區塊 */
@@ -1213,7 +1255,8 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    margin: 90px 0 0 150px;
     /* border: solid 5px rgb(191, 225, 242);  */
 }
 
@@ -1249,7 +1292,17 @@ hr {
 
 
 /* 已添加課程內容區塊  */
-#signup0 .list3 {
+#signup0 .box11{
+    margin: -125px 0 0 0;
+    /* border: solid 5px red; */
+}
+
+/* logo+清單內尚未添加課程/活動 */
+#signup0 .list22{
+    margin: -50px 0px 0 155px;
+    /* border: solid 5px red; */
+}
+/* #signup0 .list3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1257,7 +1310,8 @@ hr {
     width: 600px;
     height: 90px;
     margin-left: 60px;
-}
+    border: solid 5px red;
+} */
 
 /* 價格區塊*/
 #signup0 .box2 {
@@ -1365,9 +1419,13 @@ hr {
 }
 
 /* 上面導覽列 */
-#signup0 .nav,
-#signup0 .nav2 {
+#signup0 .nav {
     margin-top: 55px;
+    /* border: solid 5px rgb(196, 222, 244); */
+}
+
+#signup0 .nav2 {
+    margin-top: 177px;
     /* border: solid 5px rgb(196, 222, 244); */
 }
 
@@ -1474,12 +1532,12 @@ hr {
 }
 
 /* hr */
-#signup0 .box2 hr {
+/* #signup0 .box2 hr {
     width: 15px;
     position: absolute;
     bottom: 0;
     right: 0;
-}
+} */
 
 /* 活動:金工山林遊: 悠悠 */
 #signup0 .block2 {
@@ -1526,7 +1584,34 @@ hr {
 }
 
 
+/* +++ */
+/* 小標題區 */
+/* #signup0 .subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* hr */
+/* #signup0 .hr hr {
+    width: 370px;
+    height: 2.7px;
+    margin: 5px 0 5px 65px;
+    border-color: #DACFB8;
+    background-color: #DACFB8;
+} */
+
+/* 課程 活動 */
+/* #signup0 .subtitle h4 {
+    color: #DACFB8;
+    margin: 0 30px 0 50px;
+} */
+
 /* ------cart 購物車區------ */
+#cart{
+    /* width: 100%; */
+    /* border: solid 5px red; */
+}
 /* 上面導覽列 */
 #cart .nav {
     display: flex;
@@ -2085,7 +2170,7 @@ hr {
 }
 
 /* 訂單文字 */
-#show h2{
+#show h2 {
     color: #fff;
     display: flex;
     margin: 0 auto;
