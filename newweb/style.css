@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Noto+Serif+TC&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+/*UTF-8 一定要寫在第一行 */
+/* 都選400的 */
+/* 第二行思源宋體 */
+/* 第四行Unna 用Regular 400 Italic */
+/* 第五行用Cinzel */
+/* Ariel沒有google font */
+
+
+/* eric css reset重製 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* --------------------------共用--------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-family: 'Noto Serif TC', serif, 'Unna', serif, 'Cinzel', serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    color: #797474;
+    width: 700px;
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #1d201d;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1D201D;
+    letter-spacing: 2px;
+    padding: 5px 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: #1D201D;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #1D201D;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 12px;
+    color: #1D201D;
+    letter-spacing: 2px;
+}
+
+.more {
+    font-size: 14px;
+    color: #1D201D;
+    letter-spacing: 2px;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/* topbar */
+#topbar,
+#topbarw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C4935;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#topbarw{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu,
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:  10px 40px;
+    /* border: solid 3px red; */
+}
+
+.menu li,
+.icon li{
+    margin: 5px 10px;
+    /* border: solid 3px red; */
+}
+
+#topbar h3,
+#topbarw h3{
+    color: #fff;
+}
+
+.icon_signup{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(155, 130, 86, 0.74);
+    border-radius: 2px;
+    padding: 5px;
+    width: 130px;
+}
+
+.icon_signup img{
+    width: 20px;
+    height: 20px;
+}
+.icon_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.icon_login h3{
+    width: 60px;
+}
+
+.icon_login img{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+
+/* 2.banner */
+#banner {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 主要區塊 */
+#banner .sec {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 5px red; */
+}
+
+/* 背景影片MP4 */
+#banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* RWD物件填滿 */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#banner .text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#banner h1,
+#banner h2,
+#banner h3 {
+    color: #fff;
+}
+
+#banner .more {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1 {
+    /* font-size: 34px; */
+    padding: 20px 0;
+    font-family: 'Cinzel', serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+#banner h2 {
+    font-size: 38px;
+    padding: 20px 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+#banner h4 {
+    margin: 10px;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+#banner h3 {
+    margin: 10px;
+}
+
+/* hover */
+#banner .more img:hover {
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
+}
