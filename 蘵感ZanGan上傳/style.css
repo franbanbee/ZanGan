@@ -596,6 +596,18 @@ hr {
     z-index: 99;
 }
 
+/* 閱讀更多 */
+/* .about_more{
+    margin-top: 5px;
+}
+.about_more a{
+    margin-bottom: -18px;
+}
+.about_more h3{
+    font-size: 14px;
+    font-weight: 500;
+}  */
+
 /* 4.course */
 #course {
     height: 100vh;
@@ -718,34 +730,41 @@ hr {
 
 /* logo */
 .bglogo img {
-
     width: 150px;
     height: 200px;
 }
 
+/* 箭頭hover */
+/* #course .arrow_bk img:hover{
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
+    display: block;
+    width: 30px;
+    height: 30px;
+} */
+
 /* 5.teachers */
 #teachers {
-    color: #1d201d;
+    /* color: #1d201d;
     background-color: #F0F0F0;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     /* border: solid 5px rgb(219, 169, 132) */
 }
 
 /* 標題區 */
 #teachers .nav {
-    margin: 50px 0 0 105px;
+    margin: -300px 0 0 105px;
     /* border: solid 5px rgb(247, 98, 123); */
 }
 
 /* 五個圖片區域 */
-#teachers ul {
-    height: 100vh;
+#teachers .track {
+    /* height: 100vh;
     display: flex;
     justify-content: flex-end;
-    margin: 50px 5px 0 100px;
+    margin: 50px 5px 0 100px; */
     /* border: solid 5px pink; */
 }
 
@@ -757,11 +776,12 @@ hr {
     letter-spacing: 2px;
     writing-mode: vertical-lr;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-    margin: 3px 5px 5px 10px;
+    margin: 3px 5px 5px 15px;
     position: absolute;
     z-index: 99;
+    height: 200px;
     /* font-family: 'Unna', serif; */
-    padding-top: 2px;
+    /* padding-top: 2px; */
     /* border: solid 5px pink; */
 }
 
@@ -786,6 +806,8 @@ hr {
     display: block;
     width: 160px;
     height: 300px;
+    /* vertical-align: top;   */
+    margin: 5px;
     /* border: solid 5px rgb(184, 77, 95); */
 }
 
@@ -797,14 +819,20 @@ hr {
 
 /* 綠色方塊區 */
 .teachers_good {
-    background-color: #3C4935;
-    opacity: 0.85;
     color: #fff;
     width: 50px;
     height: 265px;
     margin: 60px 45px 0 -25px;
     z-index: 99;
     display: flex;
+    /* 玻璃擬態/毛玻璃 */
+    background-color: rgba(60, 73, 53, 0.85);
+    /* 背景模糊 一定要搭配背景半透明 */
+    backdrop-filter: blur(3px);
+    /* 修改input邊框的預設樣式 */
+    /* border: 2px solid rgba(255, 255, 255, 0.1); */
+    /* 玻璃陰影+玻璃黑的陰影 */
+    box-shadow: inset -1px -1px -1px rgba(255, 255, 255, 0.3), 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
     /* border: solid 5px rgb(184, 77, 95); */
 }
 
@@ -849,10 +877,93 @@ hr {
     /* border: solid 3px rgb(163, 215, 248); */
 }
 
+/* Diana 擅長另外排版 */
+.another_diana {
+    margin: 93px 5px 5px 5px;
+}
+
 #teachers hr {
     width: 500px;
     margin-top: 15px;
 }
+
+/* 換圖輪播 */
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+
+#teachers {
+    /* background: white; */
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100vh;
+    /* margin: auto; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* width: 960px; */
+    /* width: 100%; */
+    color: #1d201d;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid 5px pink; */
+}
+
+#teachers::before,
+#teachers::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+#teachers::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+#teachers::before {
+    left: 0;
+    top: 0;
+}
+
+/* 全部區塊 */
+#teachers .track {
+    -webkit-animation: scroll 50s linear infinite;
+    animation: scroll 50s linear infinite;
+    display: flex;
+    width: calc(250px * 12);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 5px 0 100px;
+}
+
+/* 每一區塊 */
+#teachers .teachers_box {
+    height: 100px;
+    width: 250px;
+}
+
 
 /* 6.news  */
 #news {
@@ -926,7 +1037,7 @@ hr {
 }
 
 /* :hover */
-#news .arrow img {
+#news .arrow img{
     background-image: url(img/index/index-news/arrow\(白\).svg);
 }
 
@@ -1100,7 +1211,7 @@ hr {
 
 }
 
-/*----------------- signup0課程報名----------------- */
+/*----------------- signup 0課程報名----------------- */
 
 /* signup0共用區 */
 /* 字的顏色 */
@@ -1183,7 +1294,7 @@ hr {
     /* border: solid 5px salmon; */
 }
 
-#signup0 .box1 hr:hover{
+#signup0 .box1 hr:hover {
     height: 2.5px;
     background-color: #3C4935;
 }
@@ -1199,9 +1310,9 @@ hr {
 }
 
 /* 分格線 */
-#signup0 .box1 hr{
-height: 2.5px;
-background-color: #DACFB8;
+#signup0 .box1 hr {
+    height: 2.5px;
+    background-color: #DACFB8;
 }
 
 /* 下拉選單 */
@@ -1232,6 +1343,13 @@ background-color: #DACFB8;
     margin-right: 30px;
 }
 
+/* 箭頭hover */
+#signup0 .list img:hover{
+    background-image: url(img/index/index-news/arrow\(黑\).svg);
+    display: block;
+    width: 40px;
+    height: 40px;
+} 
 /* 直線hr */
 #signup0 .vline {
     display: flex;
@@ -1292,16 +1410,17 @@ background-color: #DACFB8;
 
 
 /* 已添加課程內容區塊  */
-#signup0 .box11{
+#signup0 .box11 {
     margin: -125px 0 0 0;
     /* border: solid 5px red; */
 }
 
 /* logo+清單內尚未添加課程/活動 */
-#signup0 .list22{
+#signup0 .list22 {
     margin: -50px 0px 0 155px;
     /* border: solid 5px red; */
 }
+
 /* #signup0 .list3 {
     display: flex;
     justify-content: space-between;
@@ -1608,10 +1727,11 @@ background-color: #DACFB8;
 } */
 
 /* ------cart 購物車區------ */
-#cart{
+#cart {
     /* width: 100%; */
     /* border: solid 5px red; */
 }
+
 /* 上面導覽列 */
 #cart .nav {
     display: flex;
