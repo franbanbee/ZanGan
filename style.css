@@ -595,6 +595,7 @@ img{
 
 /* 5.teachers */
 #teachers {
+    /* height: 100vh; */
     /* color: #1d201d;
     background-color: #F0F0F0;
     height: 100vh;
@@ -840,7 +841,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -60px;
+    /* margin-top: -60px; */
 }
 
 /* 左邊圖片 */
@@ -1118,8 +1119,7 @@ img{
     /* border: solid 3px rgb(200, 134, 134);  */
 }
 
-/*----------------- signup 0課程報名----------------- */
-
+/*----------------- signup0課程報名----------------- */
 /* signup0共用區 */
 /* 字的顏色 */
 #signup0 h1,
@@ -1157,8 +1157,21 @@ img{
     align-items: center;
     position: relative;
     height: 40vh;
-    margin: 0 auto;
-    /* border: solid 1px salmon;  */
+    margin-left: -75px;
+    /* margin-left:-270px ; */
+    /* border: solid 3px salmon;  */
+}
+
+/* signup的整個區塊 */
+#signup0 .block11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 40vh;
+    /* margin: 0 auto; */
+    margin-left:-270px ;
+    /* border: solid 3px salmon;  */
 }
 
 /* 左半區塊 */
@@ -1173,7 +1186,8 @@ img{
     justify-content: center;
     align-items: center;
     background-color: rgba(240, 240, 240, 0.3);
-    width: 82%;
+    /* width: 82%; */
+    width: 92%;
     height: 20vh;
     margin: 20px;
     /* border: solid 5px salmon; */
@@ -1213,7 +1227,11 @@ img{
     color: #DACFB8;
     border-color: #DACFB8;
     width: 200px;
+    /* height: 2.5px; */
     /* border: solid 3px pink; */
+}
+#signup0 .box1 hr{
+    border: solid #DACFB8 1px;
 }
 
 /* 分格線 */
@@ -1232,7 +1250,6 @@ img{
     border-color: #D8D8D8;
     border-radius: 5px;
     color: #9F9F9F;
-    border-color: #D8D8D8;
     margin-left: 60px;
 
 }
@@ -1242,20 +1259,32 @@ img{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    /* border: solid 3px red; */
 }
 
 /*  圈圈往右箭頭 */
 #signup0 .list img {
-    padding-left: 10px;
-    margin-right: 30px;
+    /* padding-left: 10px; */
+    /* margin-right: 30px; */
 }
 
+/* 加入預約清單 箭頭 */
+#signup0 .arrow_w{
+    width: 9.75%;
+    height: 7.75vh;
+    margin: 0 32px 0 10px;
+    /* border: solid 3px red; */
+    background-image: url(img/index/index-news/arrow\(白\).svg);
+}
 /* 箭頭hover */
-#signup0 .list img:hover {
+#signup0 .arrow_w:hover {
+    width: 9.75%;
+    height: 7.75vh;
+    margin: 0 32px 0 10px;
     background-image: url(img/index/index-news/arrow\(黑\).svg);
     display: block;
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
 }
 
 /* 直線hr */
@@ -1403,17 +1432,20 @@ img{
 
 /* 活動 */
 #signup0 .act h3 {
-    background-color: #9B8256;
-    color: #fff;
-    width: 62px;
-    height: 10px;
+    /* background-color: #9B8256;
+    color: #fff; */
+    /* width: 62px; */
+    /* height: 80px; */
+    /* display: block;
+    width: 10%;
+    height: 20vh;
     border-radius: 0 5px 5px 0;
-    text-align: end;
-    line-height: 10px;
-    padding-right: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-align: end; */
+    /* line-height: 10px; */
+    /* padding-right: 15px; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     /* border: solid 5px rgb(231, 156, 165);  */
 }
 
@@ -1452,7 +1484,7 @@ img{
 }
 
 #signup0 .nav2 {
-    margin-top: 177px;
+    margin-top: 160px;
     /* border: solid 5px rgb(196, 222, 244); */
 }
 
@@ -1480,6 +1512,7 @@ img{
 #signup0 .box3 {
     /* border: solid 5px salmon; */
 }
+
 
 /* signup suc區 報名成功區 */
 #signup0 .list3 {
@@ -1577,12 +1610,15 @@ img{
 #signup0 .act h3 {
     background-color: #9B8256;
     color: #fff;
-    width: 62px;
-    height: 10px;
-    border-radius: 0 5px 5px 0;
+    /* width: 62px;
+    height: 10px; */
+    width: 10%;
+    height: 3vh;
+    border-radius: 0 3px 3px 0;
     text-align: end;
-    line-height: 10px;
-    padding-right: 15px;
+    padding: 2px 0;
+    /* line-height: 10px; */
+    padding-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1611,31 +1647,9 @@ img{
 }
 
 
-/* +++ */
-/* 小標題區 */
-/* #signup0 .subtitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* hr */
-/* #signup0 .hr hr {
-    width: 370px;
-    height: 2.7px;
-    margin: 5px 0 5px 65px;
-    border-color: #DACFB8;
-    background-color: #DACFB8;
-} */
-
-/* 課程 活動 */
-/* #signup0 .subtitle h4 {
-    color: #DACFB8;
-    margin: 0 30px 0 50px;
-} */
-
 /* ------cart 購物車區------ */
 #cart {
+    margin: 50px;
     /* width: 100%; */
     /* border: solid 5px red; */
 }
@@ -1645,13 +1659,18 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
     margin-top: 20px;
+}
+#cart h3{
+    margin-bottom: 10px;
 }
 
 /* 資料核對區 */
 #cart nav {
-    width: 1000px;
+    /* width: 1000px; */
+    width: 92%;
     background-color: rgba(240, 240, 240, 0.3);
     display: flex;
     flex-direction: column;
@@ -1714,10 +1733,15 @@ img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 105px;
-    margin-right: auto;
+    /* margin-left: 105px; */
+    /* margin-right: auto; */
+    /* justify-content: space-between; */
 }
 
+/* Course */
+#cart .course_c{
+    margin-left:50px ;
+} 
 /*cart: Course Price Quantity Subtotal 單一個 */
 #cart .bar h3 {
     margin-right: 90px;
@@ -1726,12 +1750,13 @@ img{
 
 /* cart price間隔 */
 #cart .price {
-    margin-left: 400px;
+    margin-left: 455px;
 }
 
 /* cart hr長度  */
 #cart .hrb {
-    width: 1000px;
+    /* width: 1000px; */
+    width: 92%;
     margin: 0 auto;
     border-color: #797474;
 }
@@ -1741,7 +1766,8 @@ img{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 1000px;
+    /* width: 1000px; */
+    width: 92%;
     margin: 20px auto;
     height: 80px;
     /* border: solid 5px salmon; */
@@ -1753,13 +1779,15 @@ img{
 }
 
 /* cart茶藝興趣A班  */
-#cart .tea h3 {
-    margin: 0 80px;
-    color: #5C5C5C;
-}
-
 #cart .tea h2 {
     color: #5C5C5C;
+}
+/*週五下午14:00-16:00，共6堂...  */
+#cart .tea .friday {
+    /* margin: 0 80px; */
+    margin: 0 85px 0 130px;
+    color: #5C5C5C;
+    /* border: solid 3px rgb(241, 181, 181); */
 }
 
 /* cart $8000區塊 */
@@ -1866,11 +1894,14 @@ img{
 #cart .act h3 {
     background-color: #9B8256;
     color: #fff;
-    width: 62px;
-    height: 10px;
-    border-radius: 0 5px 5px 0;
+    /* width: 62px;
+    height: 10px; */
+    width: 60%;
+    height: 4vh;
+    border-radius: 0 3px 3px 0;
     text-align: end;
-    line-height: 10px;
+    line-height: 4vh;
+    /* line-height: 10px; */
     padding-right: 15px;
     margin-left: 0.1px;
     margin-top: -20px;
@@ -1888,8 +1919,10 @@ img{
 
 /* 下午14:00-16:00，共1堂 */
 #cart .noon {
-    margin-left: -55px;
-    margin-right: 90px;
+    /* margin-left: -55px; */
+    /* margin-right: 90px; */
+    margin: 0 175px 0 92px;
+    /* border: solid 3px red; */
 }
 
 /* total購物車總計 */
@@ -1897,9 +1930,11 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
-    margin: 50px auto;
-    width: 1000px;
+    align-items: center;
+    margin: 50px 0 50px 62.8%;
+    /* width: 1000px; */
+    width: 35%;
+    /* border: solid 3px red; */
 }
 
 /* 購物車總計NT$8000文字區塊 */
@@ -1917,9 +1952,10 @@ img{
 }
 
 /* short hr */
-#cart hr {
+#cart .total hr {
     width: 350px;
     height: 0;
+    /* text-align: end; */
 }
 
 /* NT$8000 */
@@ -1938,7 +1974,7 @@ img{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 140px;
+    margin-right: 70px;
 }
 
 /* 送出預約訂單按鈕 */
@@ -1958,17 +1994,21 @@ img{
 
 /* 上一個步驟 */
 #cart .more {
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 /* 上一個步驟 Prev Step */
 #cart .more h3 {
     margin-left: 20px;
-    margin-bottom: -10px;
+    padding: 15px 0;
+    /* border: solid 3px red; */
 }
 
+
 /* reserve 預約成功區 */
-#reserve {}
+#reserve {
+
+}
 
 /* 上面導覽列 */
 #reserve .nav {
@@ -2783,13 +2823,9 @@ p {
 
 .media_page_logo img {
     display: block;
-    /* width: 100%; */
-    /* height: 400px; */
-    height: 50vh;
-    /* object-fit: cover; */
-    /* margin-left: 760px; */
-    /* margin-top: -400px; */
-    margin: -3210px 0 0 495px ;
+    height: 35vh;
+    /* margin: -3210px 0 0 495px ; */
+    margin: -3180px 0 0 495px ;
     /* border: #7a15d3 5px solid; */
 }
 
@@ -2899,79 +2935,77 @@ p {
     /* border: solid 1px red; */
 }
 
-
-
-/* 2-3media_content 最底部文章 */
+/* media_content 最底下文章 */
 #media_content {
-    /* margin: 400px 0 0; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* margin: 50px 0 250px 0; */
+    /* margin-left: -100px; */
+    /* border: solid 5px rgb(232, 27, 4);  */
 }
-
-
-/* MEDIA */
-#media_content .nav h3{
-    color: #1D201D;
-    text-align: center;
-    font-family: 'Unna', serif;
-}
-
-/* 其他蘵感文章 */
-#media_content .nav h1{
-    color: #1D201D;
-    margin: 0 auto;
-    font-weight: 600;
-    /* border: solid 5px rgb(156, 221, 233) */
-}
-
-/* 2023.1.16 */
-#media_content .media_date{
-    font-family: 'Unna', serif;
-    font-size: 14px;
-}
-
-
-/* 每一張圖片 */
-#media_content .img img{
-    /* width: 355px; */
-    /* height: 150px; */
-    width: 315px;
-    height: 150px;
-    /* margin: 5px 0; */
-    object-fit: contain;
-    /* border: solid 5px rgb(156, 221, 233); */
-}
-
-/* 【課程快訊】手作花藝課程邀請網紅講師Lori分<br> 享插花技巧，快來一起學習吧！ */
-#media_content h2{
-    letter-spacing: 1px;
-    line-height: 23px;
-    font-weight: 700;
-    margin-top: -10px;
-    font-size: 14px;
-    /* margin-bottom: 10px; */
-    /* border: solid 5px rgb(221, 175, 170); */
-}
-
-/* 您是否曾經想過要自己製作一束美麗的花束，但卻不知道該如何下手呢？質感工作室特別邀請到插花網... */
-#media_content h3{
-    letter-spacing: 1px;
-    line-height: 21px; 
-    font-size: 12px;
-    /* font-family: 'Unna', serif; */
-    /* margin: 10px 0; */
-}
+/* 
+#media_content .sect{
+    width: 90%;
+    border: solid 5px salmon; 
+}  */
 
 /* 上方導覽區塊 */
 #media_content .nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 20px;
-    /* border: solid 5px salmon; */
+}
+
+/* MEDIA */
+#media_content .nav h3 {
+    font-family: 'Unna', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 2023.1.16 */
+#media_content li h3{
+    margin: 10px 0 ;
+    /* border: solid 5px salmon;  */
+}
+
+/* hr */
+#media_content .span{
+    width: 50%;
+}
+#media_content .nav hr {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* 每一張圖片 */
+#media_content .img img {
+    width: 100%;
+    height: 25vh;
+    margin: 10px 0;
+    object-fit: contain;
+    /* border: solid 5px rgb(156, 221, 233); */
+}
+
+/* 【課程快訊】手作花藝課程邀請網紅講師Lori分<br> 享插花技巧，快來一起學習吧！ */
+#media_content h2 {
+    letter-spacing: 1px;
+    line-height: 1rem;
+    font-weight: 700;
+    margin-top: -10px;
+    font-size: 14px;
+    /* border: solid 5px rgb(221, 175, 170); */
+}
+
+/* 您是否曾經想過要自己製作一束美麗的花束，但卻不知道該如何下手呢？質感工作室特別邀請到插花網... */
+#media_content h3 {
+    letter-spacing: 1px;
+    line-height: 1rem;
+    font-size: 12px;
 }
 
 /* logo */
-#media_content .logobg{
+#media_content .logobg {
     width: 500px;
     height: 100px;
     margin-left: -10px;
@@ -2984,38 +3018,33 @@ p {
     margin-top: 10px;
 }
 
-/* hr位置最下面 */
-#media_content .nav hr {
-    margin-top: 25px;
-    width: 520px;
-}
-
 /* 內容大區塊 */
 #media_content .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 40px;
-    margin-top: 50px;
+    margin: 30px 0 50px;
+    width: 100%;
 }
 
 /* 每一區塊 */
 #media_content .main li {
-    /* padding: 0 5px; */
-    margin: 0 10px 60px 10px;
     width: 320px;
+    margin: 0 10px;
     /* border: solid 5px salmon; */
 }
 
 /* 閱讀更多 */
-#media_content .more{
-    margin-top: 5px;
+#media_content .more {
+    margin: 5px 0 50px;
 }
-#media_content .more a{
-    margin-bottom: -18px;
+
+#media_content .more a {
+    margin-bottom: 10px;
     /* border: solid 5px salmon; */
 }
-#media_content .more h3{
+
+#media_content .more h3 {
     font-size: 14px;
     font-weight: 500;
 }
