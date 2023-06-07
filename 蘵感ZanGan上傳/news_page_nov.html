@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow" />
     <title>[活動快訊]11月美學下午茶報名開始了～</title>
-    <link rel="stylesheet" href="pages.css">
+    <!-- <link rel="stylesheet" href="pages.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="breadcrumb.css">
     <script src="script.js"></script>
 
 </head>
 
 <body>
-    <!-- topbar green 精簡+100%-->
-    <div id="topbar">
-        <nav>
+    <!-- topbar 首頁區  -->
+    <header id="topbar">
+        <!-- 漢堡按鈕 -->
+        <div class="nav_box">
+            <!-- <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button> -->
             <ul class="menu">
                 <li><a href="about.html">
                         <h3>關於蘵感</h3>
@@ -31,45 +38,36 @@
                         <h3>蘵感文章</h3>
                     </a></li>
             </ul>
-        </nav>
-        <h1 class="logo">
-            <a href="index.html">
-                <img src="img/index/index-topbar/cn-logo1.svg" alt="logo">
-            </a>
-        </h1>
-        <nav>
+        </div>
+        <a href="index.html" class="logo">
+            <img src="img/index/index-topbar/logo.svg" alt="">
+        </a>
+        <!-- 選單列 -->
+        <nav class="navigation">
             <ul class="icon">
-                <li class="signup">
-                    <a href="signup.html">
+                <li><a href="signup.html" class="icon_signup">
                         <h3>快速報名</h3>
-                    </a>
-                    <span class="space"><img src="img/index/index-topbar/立即報名（白）.svg" alt=""></span>
-                </li>
-                <li class="login_box">
-                    <span class="login"><img src="img/index/index-topbar/user.svg" width="20" height="20"
-                            alt="登入"></span>
-                    <span><a href="login.html">
-                            <h3>登入</h3>
-                        </a></span>
-                </li>
-                <li>
-                    <a href="cart.html">
-                        <span class="carticon"><img src="img/index/index-topbar/cart.svg" alt="購物車"></span>
+                        <img src="img/index/index-topbar/立即報名（白）.svg" alt="">
+                    </a></li>
+                <li><a href="login.html" class="icon_login">
+                        <img src="img/index/index-topbar/user.svg" alt="">
+                        <h3>登入</h3>
                     </a>
                 </li>
+                <li><a href="cart.html"><img src="img/index/index-topbar/cart.svg" alt="" width="40" height="40"></a></li>
             </ul>
         </nav>
-    </div>
-
-    <!-- 2.news -->
+    </header>
+    
+    <!-- news_page -->
     <div id="news_page">
         <div class="all_section">
             <!-- 麵包屑 -->
             <div class="wrap">
                 <ol class="breadcrumb">
-                    <li href="#"><a class="news_box0">首頁</a></li>
-                    <li href="#"><a class="news_box">最新消息</a></li>
-                    <li href="#"><a class="news_box2">[活動快訊]11月美學下午茶報名開始了～</a></li>
+                    <li><a class="news_box0" href="index.html">首頁</a></li>
+                    <li><a class="news_box" href="news.html">最新消息</a></li>
+                    <li><a class="news_box2" href="news_page_nov.html">[活動快訊]11月美學下午茶報名開始了～</a></li>
                 </ol>
             </div>
             <!-- 內容區塊 -->
@@ -121,7 +119,7 @@
                     </div>
                     <!-- 查看下一則 -->
                     <div class="news_page_arrow next">
-                        <h3><a href="news_page_oct.html">查看下一則</a></h3>
+                        <h3><a href="news_page_nov.html">查看下一則</a></h3>
                         <img src="img/index/index-about/arrow(黑).svg" alt="">
                     </div>
                 </div>
@@ -130,17 +128,17 @@
     </div>
 
 
-    <!-- +a -->
-    <!-- 8.footer -->
-    <div id="footer">
-        <!-- <div class="all_section"> -->
+     <!-- footer -->
+     <div id="footer">
         <div class="footer_ul">
             <!-- 第一欄 -->
             <ul>
                 <div class="footer_li">
                     <div class="footer_nav">
                         <li>
-                            <img src="img/index/index-footer/logo all.svg" alt="">
+                            <h1>
+                                <img src="img/index/index-footer/logo all.svg" alt="">
+                            </h1>
                         </li>
                     </div>
                     <div class="footer_main">
@@ -159,17 +157,21 @@
                             <!-- &nbsp;空白,可以一直增加 -->
                             <p>
                             <h3>
-                                32462 <br>
-                                台北市枕頭村乃貓巷第一個盆栽下 3F<br>
-                                電話號碼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02-9900206<br>
-                                營業時間&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:30-20:00<br>
-                                公休日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星期二/三 (國定假期)<br>
+                                <div class="addr">
+                                    32462 <br>
+                                    台北市枕頭村乃貓巷第一個盆栽下 3F
+                                </div>
+                                <div class="time">
+                                    <h3>電話號碼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02-9900206</h3>
+                                    <h3>營業時間&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:30-20:00</h3>
+                                    <h3>公休日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星期二/三 (國定假期)</h3>
+                                </div>
                             </h3>
                             </p>
                         </li>
                     </div>
                     <div class="footer_main">
-                        <li>
+                        <li class="icon_soc">
                             <img src="img/index/index-footer/社群軟體icon.svg" alt="">
                         </li>
                     </div>
@@ -187,7 +189,7 @@
                         </li>
                     </div>
                     <div class="footer_main">
-                        <li>
+                        <li class="faq">
                             <a href="faq.html">
                                 <h1> FAQ</h1>
                             </a>
