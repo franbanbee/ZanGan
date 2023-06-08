@@ -798,12 +798,14 @@ img {
     #course .item5 {
         margin: 500px 0 0 -250px;
         margin: 800px 0 0 -250px;
+        margin: 600px 0 0 -250px;
     }
 
     #course .bglogo1 img {
-        margin: -100px 0 0 150px;
+        display: none;
+        /* margin: -150px 0 0 150px;
         width: 75%;
-        height: 20vh;
+        height: 20vh; */
         /* object-fit: cover; */
     }
 }
@@ -823,7 +825,7 @@ img {
 /* 標題區 */
 #teachers .nav {
     /* margin: -300px 0 0 105px; */
-    margin: -200px 0 0 50px;
+    margin: -235px 0 0 50px;
     /* height: 50vh; */
     /* border: solid 5px rgb(247, 98, 123); */
 }
@@ -1031,7 +1033,7 @@ img {
     /* height: 100vh; */
     display: flex;
     justify-content: flex-end;
-    margin: 50px 5px 0 100px;
+    margin: 30px 5px 0 100px;
     /* width: 100%;
     height: 300px;
     overflow: hidden; */
@@ -1062,7 +1064,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: -60px; */
+    margin-top: -67px;
 }
 
 /* 左邊圖片 */
@@ -1141,7 +1143,9 @@ img {
 }
 
 /* RED手機 */
-@media (max-width:576px) {}
+@media (max-width:576px) {
+
+}
 
 /* 7.media */
 #media {
@@ -1168,7 +1172,7 @@ img {
 #media .nav h3 {
     font-family: 'Unna', serif;
     /* font-size: 14px; */
-    letter-spacing: 0.875rem;
+   font-size: 0.875rem;
 }
 
 /* 2023.1.16 */
@@ -1186,7 +1190,6 @@ img {
     margin-top: 25px;
     width: 100%;
 }
-
 /* 每一張圖片 */
 #media .img img {
     width: 100%;
