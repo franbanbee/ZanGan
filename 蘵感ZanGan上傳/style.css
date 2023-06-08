@@ -588,6 +588,7 @@ img {
         width: 280px;
         height: 250px;
         margin: 430px 0 0 -270px;
+        object-fit: cover;
     }
 
     #about hr {
@@ -741,7 +742,7 @@ img {
 }
 
 /* RED手機 */
-@media (max-width:576px) {
+@media (max-width:576px){
     #course {
         width: 68%;
         height: 110vh;
@@ -803,9 +804,12 @@ img {
 
     #course .bglogo1 img {
         display: none;
-        /* margin: -150px 0 0 150px;
-        width: 75%;
-        height: 20vh; */
+        /* margin: -150px 0 0 150px; */
+        /* width: 50%; */
+        /* height: 15vh; */
+        /* width: 100px;
+        height: 150px;
+        border: solid 3px red; */
         /* object-fit: cover; */
     }
 }
@@ -964,7 +968,8 @@ img {
 }
 
 #teachers hr {
-    width: 500px;
+    /* width: 500px; */
+    width: 40em;
     margin-top: 15px;
 }
 
@@ -1056,6 +1061,39 @@ img {
     /* position: absolute;
     top: 550px;
     right: 105px; */
+    /* border: solid 3px red; */
+}
+/* RWD手機 */
+@media (max-width:576px){
+    #teachers{
+        width: 68%;
+        height: 70vh;
+    }
+    #teachers .nav{
+        margin: -200px 0 0 10px;
+    }
+    #teachers .nav h3{
+        margin-bottom: 10px;
+    }
+    #teachers .nav hr{
+        width: 15em;
+    }
+    #teachers .bglogo{
+        width: 55%;
+        height: 10vh;
+        position: absolute;
+        z-index: 9;
+        margin: -350px 0 0 -650px ;
+    }
+    #teachers .track{
+        margin-top: 40px;
+    }
+}
+/* RWD桌電 */
+@media (min-width:992px){
+    #teachers .bglogo{
+        display: none;
+    }
 }
 
 /* 6.news  */
@@ -1123,7 +1161,8 @@ img {
 
 /* hr */
 #news hr {
-    width: 100%;
+    /* width: 100%; */
+    width: 40em;
     margin: 10px 0;
 }
 
@@ -1144,7 +1183,34 @@ img {
 
 /* RED手機 */
 @media (max-width:576px) {
-
+    #news{
+        width: 68%;
+        height: 70vh;
+        margin-top: 200px;
+    }
+    #news .pho img{
+        width: 265px;
+        height: 250px;
+        margin: -495px 0 0 0;
+        object-fit: cover;
+    }
+    #news .uu{
+        width: 100%;
+        margin: 400px 0 0 -265px;
+    }
+    #news .nav h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.01rem;
+    }
+    #news hr{
+        width: 15em;
+    }
+    #news .more{
+        margin: 10px -5px 0 0;
+    }
+    #news .arrow img{
+        display: none;
+    }
 }
 
 /* 7.media */
@@ -1267,7 +1333,59 @@ img {
 }
 
 /* RED手機 */
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    #media{
+        width: 68%;
+        height: 105vh;
+        margin-top: 300px;
+    }
+    #media .span{
+        width: 100%;
+        height: 80px;
+        margin: 0 0 0 -10px;
+    }
+    #media .span h3{
+        margin: 50px 100px 0 0;
+    }
+    #media .nav img{
+        width: 240px;
+        height: 100px;
+        margin:-100px 0 0 -220px ;
+    }
+    #media .span hr{
+        width: 15em;
+        margin-top:8px ;
+    }
+    #media .item4,
+    #media .item5,
+    #media .item6{
+        display: none;
+    }
+    #media .main{
+        margin: 0 0 0 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #media h2{
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        width: 85%;
+        line-height: 1.5em;
+    }
+    #media .img img{
+        width: 80%;
+        margin: -40px 0 -50px 0 ;
+    }
+    #media h3{
+        width: 85%;
+        letter-spacing: 0.03rem;
+    }
+    #media .more{
+        margin-bottom:30px ;
+    }
+    
+}
 
 /* 8.footer */
 #footer {
@@ -1320,6 +1438,7 @@ img {
 
 #footer h3 {
     color: #E7E4DB;
+    opacity: 0.75;
 }
 
 #footer li {
@@ -1359,7 +1478,46 @@ img {
 }
 
 /* RED手機 */
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    #footer{
+        width: 68%;
+        height: 30vh;
+        /* height: 250px; */
+        margin: 50px 0 0 0 ;
+    }
+    .footer_nav{
+        margin: 40px 0 0 -355px;
+    }
+    #footer .eng{
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+    }
+    .footer_nav .addr{
+        width: 11em;
+        font-size: 0.75rem;
+        line-height: 1.5em;
+        margin-bottom: -150px;
+        letter-spacing: 0.2em;
+    }
+    #footer h3 .time {
+        margin: 20px 0 0 -87px ;
+    }
+    #footer h3 .time h3{
+        font-size: 0.75rem;
+    }
+    #footer .icon_soc{
+        width: 300px;
+        margin: -280px 0 0 -200px ;
+    }
+    #footer .contact{
+        margin: 30px 0 0 -205px;
+    }
+    #footer .contact h3{
+        font-size: 0.75rem;
+        line-height: 5em;
+        letter-spacing: 0.1em;
+    }
+}
 
 /*----------------- signup0課程報名----------------- */
 /* signup0共用區 */
