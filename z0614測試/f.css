@@ -1,0 +1,231 @@
+/* 首頁區 */
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+#topbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* icon */
+.icon {
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+.icon a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+}
+
+/* :hover */
+
+.icon_fb {
+    background-image: url(images/icon-fb.svg);
+}
+
+.icon_ig {
+    background-image: url(images/icon-ig.svg);
+}
+
+.icon_line {
+    background-image: url(images/icon-line.svg);
+}
+
+.icon_fb:hover {
+    background-image: url(images/icon-fb-hover.svg);
+}
+
+.icon_ig:hover {
+    background-image: url(images/icon-ig-hover.svg);
+}
+
+.icon_line:hover {
+    background-image: url(images/icon-line-hover.svg);
+}
+
+.menu {
+    background-color: transparent;
+    /* 以下取消玻璃擬態效果 */
+    /* 玻璃擬態/毛玻璃 */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* 背景模糊 一定要搭配背景半透明 */
+    backdrop-filter: blur(3px);
+    /* 修改input邊框的預設樣式 */
+    border: none;
+    /* 玻璃陰影+玻璃黑的陰影 */
+    box-shadow: none;
+    margin-right: 40px;
+}
+
+/* 拉線滑動 */
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.menu li ::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+}
+
+.menu li :hover::after {
+    width: 100%;
+    /* 轉場效果 */
+    transition: .35s;
+}
+
+@media (min-width:577px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* RWD手機 */
+@media (max-width:576px) {
+    #topbar ul{
+        justify-content: center;
+    }
+    .icon{
+        margin-left: auto;
+        margin-right:auto ;
+
+    }
+
+    .icon a{
+        margin: 0 2px;
+    }
+
+    /* 漢堡按鈕  */
+    .nav_box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 40px;
+    }
+
+    /* .navigation {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    .hamburger {
+        /* 自動抓內容.bar的尺寸 */
+        display: inline-block;
+        cursor: pointer;
+        /* 取消button的預設樣式 */
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .bar {
+        /* 修改span行內元素為區塊 */
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #333;
+        /* 轉場動態 */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu {
+        flex-direction: column;
+        /* 以下取消玻璃擬態效果 */
+        /* 玻璃擬態/毛玻璃 */
+        background-color: transparent;
+        /* 背景模糊 一定要搭配背景半透明 */
+        backdrop-filter: none;
+        /* 修改input邊框的預設樣式 */
+        border: none;
+        /* 玻璃陰影+玻璃黑的陰影 */
+        box-shadow: none;
+        margin-left: auto;
+        margin-right:auto ;
+        text-align: center;
+        /* border: #a35472 solid 5px; */
+    }
+
+    #menu a {
+        padding: 15px 10px;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        padding: 20px;
+        border-radius: 5px;
+        /*   height: 100%; */
+        /* 玻璃擬態/毛玻璃 */
+        background-color: rgba(255, 255, 255, 0.2);
+        /* 背景模糊 一定要搭配背景半透明 */
+        backdrop-filter: blur(3px);
+        /* 修改input邊框的預設樣式 */
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        /* 玻璃陰影+玻璃黑的陰影 */
+        box-shadow: inset -1px -1px -1px rgba(255, 255, 255, 0.3), 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        display: none;
+        animation: navigation 0.35s both;
+        /* border: #a35472 solid 5px; */
+    }
+
+    @keyframes navigation {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .navigation.show {
+        display: block;
+        animation: show 0.35s both;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
